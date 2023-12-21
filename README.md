@@ -1,84 +1,91 @@
-# SAS vs. R for data analysis
+---
+title: "SAS vs. R for data analysis"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE, message = FALSE, warning = FALSE)
+```
+
 
 Moving from a SAS environment to the R programming language requires a paradigm change in thinking. I hope that this documents helps you in deciding whether to stay with SAS or move to R. This document is written for the intermediate SAS epidemiologist who is exploring the use of R.
 
 ### Difference in approach
 
-The biggest difference between the two for data analysis is that R is a full programming language and works with numbers, lists, matrices, and tables. R treats these as objects, and you write functions to change these objects. There are often many ways to achieve your intended result, and that flexibility may initially be overwhelming. In SAS, you primarily work with data tables and manipulate data through the data step, which steps through the data row by row. 
+The biggest difference between the two for data analysis is that R is a full programming language and works with numbers, lists, matrices, and tables. R treats these as objects, and you write functions to change these objects. There are often many ways to achieve your intended result, and that flexibility may initially be overwhelming. In SAS, you primarily work with data tables and manipulate data through the data step, which steps through the data row by row. This difference in changing or mutating different types of objects as a whole, vs. stepping through the dataset row by row means the functions you use in R are more abstract, especially when used in combination with other functions.
 
-This difference in changing or mutating an object as a whole, vs. stepping through the data row by row means the functions you use in R are more abstract, especially when used in combination with other functions. Likewise in SAS, you use procedure steps that guide you in generating reports and summarizing the data. In R, the reporting functions are more basic, giving you the flexibility to change the inputs, but which comes with a higher learning curve. 
+The other big difference is that to summarize data in SAS, you use procedure steps that guide you in generating reports and summary statistics. In R, the summary functions are more rudimentary, giving you the flexibility to format your table in a wide variety of options, but which comes with a higher learning curve. 
 
 ### A quick note about packages
 
-The R programming language is very extensible, meaning that just like many browsers, you can download and install extensions that extend the functionality beyond the base R language. We will be using many of the popular packages in our lessons below. The benefits of using packages is ease of use. They make the code easier to read. Many end users rely heavily on these packages in day to day work. The negative is that these packages may hide much of the complexities of the underlying programming. 
+The R programming language is very extensible, meaning that just like many browsers, you can download and install extensions that extend the functionality beyond the base R language. We will be using many of the popular packages in our lessons below. The benefits of using packages is ease of use. The functions included with many of these packages simplify or combine base R functions. Many end users rely heavily on these packages in day to day work. The negative is that these packages may hide much of the complexities of the underlying programming. 
 
-Data problems can be solved without any packages, using only base R functions that come with the standard install, but that requires in-depth knowledge of base R functions (as you will see in the looping function below). Len Greski showcases a [good comparison](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/exampleSortRvsSAS.md) of using base R syntax to simply sort a variable.  
+Data problems can be solved without any packages, using only base R functions that come with the standard install. But that requires in-depth knowledge of base R functions (as you will see in some of the examples below). Here's a quick example below that shows sorting two columns using packages vs. base R functions only. 
 
+Base R functions only:
+```
+# import data set using base R code only
+file_location <- paste0(getwd(), "/", "surveillance_linelist_20141201.csv")
+df <- read.csv(file = file_location)
 
-## Code comparison between SAS and R
+# this code will will sort the onset date column, but will ignore all the other columns
+sorted <- sort(as.Date(df$onset.date, format = "%m/%d/%Y"), na.last = FALSE)
 
-Let's say I want to take a line listing, and number each patient 1, 2, 3..., grouped by day, i.e. the numbers restart for each new day. This could be useful if, for instance, you later want to find all the first, or third patient that presented symptoms for a given day. 
+# instead, create an sorting index based on two variables
+sort_index <- order(as.Date(df$onset.date, format = "%m/%d/%Y"), df$gender, na.last = FALSE)
 
-This is easy in SAS because the data step can count row by row. SAS would create a hidden column (named first) that writes the value `1` if the date column is different from the preceding row, thus specifying a new day. It writes `0` elsewhere. If the value is `1` (meaning a new day), then it resets the count to `0`. Stepping through the data row by row is very intuitive and that is how we would do it on pen and paper. But it can get complicated fast if you need to group by multiple columns. 
-
-You can copy the code below directly into your SAS editor and run it.
-
-```         
-/*set recommended options*/
-options compress=yes;
-options nofmterr;
-/*Creating relative path to data folders*/
-%let a=%sysget(SAS_EXECFILEPATH);
-%let b=%sysget(SAS_EXECFILENAME);
-%put &a;
-%put &b;
-%let folder= %sysfunc(tranwrd(&a,&b,));
-%put &folder;
-
-/*import data file*/
-proc import datafile = "&folder\surveillance_linelist_20141201.csv" dbms=csv out=df replace; 
-run;
-
-/*Using by statement requires sorting*/
-proc sort data=df;
-	by onset_date;
-run;
-
-data df2;
-	set df;
-	where onset_date ne .;
-	by onset_date;
-	retain running_count 0;
-	if first.onset_date = 1 then running_count=0;
-	running_count = running_count + 1;
-run;
+# re-arrange dataset based on sort index
+df <- df[sort_index, ,drop=FALSE]
 ```
 
-As a reminder, this data step works by creating two new columns, one visible called `running_count`, and another hidden column called `first`. Using the retain option, SAS retains the row count when the PDV re-initializes, before adding the 1 for the next row and outputting the result in the `running_count` column. SAS resets the `running_count` column when encountering a `1` in the `first` column, which indicates that the date has changed compared to the previous row (which is why sorting is required).
-
-In R, the functions you write apply to the entire dataset. 
-
-```    
+We cannot use the base R sort function because that function only sorts the specified column in the dataset, without re-ordering the other columns. Instead we create a vector that shows what order rows should come in based off the columns we specify before re-arranging the rows using subsetting. Using only base R functions requires knowledge of a functions options, even for a standard operation for sorting. Here is the same code using the dplyr and lubridate package:
+```
 # install helper packages
 pacman::p_load(
   rio,  here,  dplyr,  janitor,  lubridate,  epikit
   )
+  
+# re-load dataset using helper functions
+df <- import(here("surveillance_linelist_20141201.csv")) 
 
-# import data set
-df <- import(here("surveillance_linelist_20141201.csv"))
+# sort using dplyr function arrange
+df <- df %>% arrange(mdy(`onset date`), gender)
+```
+You can see this code that uses packages is very readable and similar to the SAS code:
+```
+/* set recommended options */
+options compress=yes;
+options nofmterr;
 
-#here is the code to create a running count column
-df2 <- df %>% clean_names() %>% 
-  group_by(onset.date) %>% 
-  mutate(count = row_number())
+/*Creating relative path to data folders*/
+%let a=%sysget(SAS_EXECFILEPATH);
+%let b=%sysget(SAS_EXECFILENAME);
+%let folder= %sysfunc(tranwrd(&a,&b,));
+
+/* import data file */
+proc import datafile = "&folder\surveillance_linelist_20141201.csv" dbms=csv out=df replace; 
+run;
+
+/* sort on onset date and gender */
+proc sort data=df;
+	by gender onset_date;
+run;
 ```
 
-Behind the scenes, R is translating this function into the C programming language (which better mirrors how a computer calculates sums at a machine level) and uses specialized algorithms to calculate the output. While R is not any faster than SAS at counting the rows (the SAS program has been heavily optimized over the decades), the SAS paradigm of stepping through the data set row by row begins to show limitations when there are multiple groups. 
 
-### Grouping by multiple variables
+## Longer code comparison between SAS and R
 
-Let's say I want to group the counts by day and region, so a count of `1` means that this was the first person to present with symptoms on this day in this particular region. In SAS, grouping by multiple variables requires the same number of lines of code, but the readability decreases. 
-```
+Let's say I want to take a line listing, and number each patient 1, 2, 3..., grouped by day, and region i.e. the numbers restart for each new day and region. This could be useful if, for instance, you later want to find all the first, or third patient that presented symptoms for a given day at a particular region.
+
+This is of moderate difficulty in SAS. We would first sort the data by date and region. SAS would then step through the data row-by-row and determine if the date and/or the region changes. This reflects how we would do this ourselves on pen and paper. 
+
+SAS creates two hidden columns that writes the value `1` if the date or region column is different from the preceding row, thus specifying a new date or region. It writes `0` elsewhere. If the value is `1` (meaning a new date or region), then it resets the count to `0`. There are a few peculiarities to this that we won't cover, but this is in summary how the code works. 
+
+You can copy the code below directly into your SAS editor and run it.
+
+```         
+/*Using by statement requires sorting*/
 proc sort data=df;
 	by onset_date adm3_name_det /* this is the region variable */;
 run;
@@ -88,28 +95,49 @@ data df_onset_region_count;
 	where onset_date ne .;
 	by onset_date adm3_name_det;
 	retain running_count 0;
+
+/*	unhide hidden helper columns*/
+	first_det = first.adm3_name_det;
+	first_onset = first.onset_date;
+
 	if first.adm3_name_det = 1 then running_count=0;
 	running_count = running_count + 1;
+	keep onset_date adm3_name_det first_det first_onset running_count;
 run;
 ```
 
+By using the retain function, SAS retains the row count when the PDV re-initializes, before adding the 1 for the next row and outputting the result in the `running_count` column. SAS resets the `running_count` column when encountering a `1` in the hidden column, which indicates that the date or region has changed compared to the previous row (which is why sorting is required).
+
+In R, you write functions that apply to the entire dataset. 
+
+```    
+# here is the code to create a running count column
+df_onset_region_count <- df 
+  %>% clean_names() %>% 
+  group_by(mdy(onset_date), adm3_name_det) %>% 
+  mutate(count = row_number()) %>% 
+  select(onset_date, adm3_name_det, count)
+```
+
+While the code may look cleaner, figuring out which functions to use is more difficult. Behind the scenes, R is translating this function into the C programming language (which better mirrors how a computer calculates sums at a machine level) and still steps through the data but in a more efficient method. While this method in R is not any faster than SAS (the SAS program has been heavily optimized over the decades), in SAS you are always limited to stepping through the data set row by row. 
 
 ### A quick note about looping
 
-You can always force R to loop through each row, counting the rows by group, similar to the SAS data step. But in many ways, understanding this code is more difficult than in SAS. And looping through each row in R is hundreds or even thousands of times slower than using functions that utilizing vectorized R functions. 
+You can always force R to loop through each row, counting the rows by group, similar to the SAS data step. But in many ways, understanding this code is more difficult than in SAS because it uses base R functions more heavily. And looping through each row in R is hundreds or even thousands of times slower than using functions that utilizing vectorized R functions as shown above. The example below only groups by unique date, not on region. 
 
 ```
 # Get unique groups of dates
-unique_groups <- unique(df$onset.date)
+unique_groups <- unique(df$`onset date`)
 
 # Add a new column for row numbers
 df$row_number <- NA
 
 # Find the row numbers for each unique date, and then assign row numbers
 for (i in unique_groups) {
-  group_rows <- which(df$onset.date == i)
+  group_rows <- which(df$`onset date` == i)
   df$row_number[group_rows] <- seq_along(group_rows)
 }
+df[,c(3,19,25)]
 ```
 Hopefully this introductory example gives you a good idea of the major differences in approach when coding in SAS vs. R. The section below gives side-by-side examples of SAS and R code to complete the same data processing steps. 
 
@@ -120,7 +148,7 @@ This and the next few sections showcase the same data manipulation steps in both
 
 As you begin your journey in the R language, use these sections as a quick-start reference. We hope that the functions we show below represent the most commonly used functions in your day-to-day data analysis. 
 
-First we manipulate the timedata SAS table using commonly used SAS functions. 
+First we manipulate the line listing using commonly used SAS functions. 
 ```{SAS}
 /*Rename variables. This is separate datastep because of how SAS initializes variables*/
 data df2;
@@ -164,7 +192,13 @@ data df3;
     else age_years = age;
     
     /* Age categories - assuming a custom function or format for 'age_categories' */
-    /* SAS does not have a direct equivalent for this, you may need to write a custom format or use PROC FORMAT */
+	format age_group $10.;
+	if age <= 4 then age_group = '0-4'; 
+ 	else if age >=5 and age  <=17 then age_group = '5-17'; 
+ 	else if age >=18 and age <=24 then age_group = '18-24'; 
+ 	else if age >=25 and age <=49 then age_group = '25-49'; 
+ 	else if age >=50 and age <=64 then age_group = '50-64'; 
+ 	else if age >=65 and age <=150 then age_group = '65+';  
 
     /* Date difference */
     diff = date_report - date_onset;
@@ -176,7 +210,6 @@ data df3;
     /* Keeping only confirmed cases */
     if case_def ne 'Confirmed' then delete;
     
-    /* Selecting columns - SAS automatically retains all columns unless explicitly dropped */
 run;
 ```
 And here is the same code, but written in R language, using the lubridate and dplyr packages:
@@ -235,7 +268,11 @@ df3 <- df %>%
   )) %>% 
   
   #age categories
-  mutate(age_cat = age_categories(age_years, breakers = c(0, 5, 10, 15, 20, 30, 40, 50))) %>% 
+  mutate(age_cat = ifelse(age <= 4, "0-4",
+                   ifelse(age <= 17, "5-17",
+                   ifelse(age <= 24, "18-24",
+                   ifelse(age <= 49, "25-49",
+                   ifelse(age <= 64, "50-64", "65+")))))) %>% 
   
   #date diff
   mutate(diff = date_report - date_onset) %>% 
@@ -250,12 +287,15 @@ At the basic level, both codes look roughly similar, and that was likely the int
 
 ## Comparing PROC tables
 
-The power of SAS lies in the numerous reports that are able to be easily generated by simple proc statements. We try to re-create the most commonly used proc tables. 
+The power of SAS lies in the numerous summary statistic reports that are able to be easily generated by simple proc statements. We try to re-create the most commonly used proc tables. SAS code on the left, and R code on the right.
 
 ### PROC Contents and PROC Summary
 These procedures give you an initial idea of the makeup of the dataset. 
-```
-/*general data table information and list of variables */
+
+::::: columns
+::: column
+```SAS
+/*general information and list of variables */
 proc contents data=df3;
 run;
 
@@ -263,30 +303,34 @@ run;
 proc summary data=df3 print;
 var _numeric_;
 run;
+```
+:::
 
-```
-Here are similar functions in R:
-```
+::: column
+```r
 str(df3) # shows type of each variable, and sample data
 summary(df3) # summary statistics for numeric variables
 ```
-### Proc Freq
-Proc Freq is one of the most powerful procs that is commonly used. It is very flexible 
+:::
+:::::
 
+### PROC Freq
+Proc Freq is one of the most powerful procedures that is commonly used. It is very flexible and can create a wide variety of different types of summary statistics. The code below produces a frequency table with percentages on one variable. 
+
+::::: columns
+::: column
+```SAS
+/*one way frequency table in descending order*/
+proc freq data = df3 order=freq;
+	tables hospital;
+run;
 ```
-df3 %>%
-  group_by(hospital) %>%
-  summarise(
-    freq_fever = list(table(fever)),
-    freq_chills = list(table(chills)),
-    freq_cough = list(table(cough)),
-    freq_aches = list(table(aches)),
-    freq_vomit = list(table(vomit))
-  )
+:::
+
+::: column
+```r
+# using dply and janitor to get a one way freq table
+df3 %>% tabyl(hospital) %>% arrange(-n)
 ```
-
-
-
-
-
-
+:::
+:::::
