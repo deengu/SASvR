@@ -1,21 +1,17 @@
----
-title: "SAS vs. R for data analysis"
-output: html_document
-date: "`r Sys.Date()`"
----
+# SAS vs. R for epi data analysis
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(eval = FALSE, message = FALSE, warning = FALSE)
 ```
 
 
-Moving from a SAS environment to the R programming language requires a paradigm change in thinking. I hope that this documents helps you in deciding whether to stay with SAS or move to R. This document is written for the intermediate SAS epidemiologist who is exploring the use of R.
+Moving from a SAS environment to the R programming language requires a paradigm change in thinking. I hope that this documents helps you in deciding whether to stay with SAS or move to R. This document is written for the intermediate SAS epidemiologist who is exploring the use of R. Some general programming concepts like looping and experience with vectors and lists are are helpful to understand some of the code below. 
 
 ### Difference in approach
 
 The biggest difference between the two for data analysis is that R is a full programming language and works with numbers, lists, matrices, and tables. R treats these as objects, and you write functions to change these objects. There are often many ways to achieve your intended result, and that flexibility may initially be overwhelming. In SAS, you primarily work with data tables and manipulate data through the data step, which steps through the data row by row. This difference in changing or mutating different types of objects as a whole, vs. stepping through the dataset row by row means the functions you use in R are more abstract, especially when used in combination with other functions.
 
-The other big difference is that to summarize data in SAS, you use procedure steps that guide you in generating reports and summary statistics. In R, the summary functions are more rudimentary, giving you the flexibility to format your table in a wide variety of options, but which comes with a higher learning curve. 
+The other big difference is that to summarize data and produce reports in SAS, you use procedure (PROC) steps that guide you in generating reports and summary statistics. In R, the summary functions are more rudimentary, giving you the flexibility to format your table in a wide variety of options, but which comes with a higher learning curve. 
 
 ### A quick note about packages
 
@@ -24,7 +20,7 @@ The R programming language is very extensible, meaning that just like many brows
 Data problems can be solved without any packages, using only base R functions that come with the standard install. But that requires in-depth knowledge of base R functions (as you will see in some of the examples below). Here's a quick example below that shows sorting two columns using packages vs. base R functions only. 
 
 Base R functions only:
-```
+```r
 # import data set using base R code only
 file_location <- paste0(getwd(), "/", "surveillance_linelist_20141201.csv")
 df <- read.csv(file = file_location)
@@ -39,8 +35,8 @@ sort_index <- order(as.Date(df$onset.date, format = "%m/%d/%Y"), df$gender, na.l
 df <- df[sort_index, ,drop=FALSE]
 ```
 
-We cannot use the base R sort function because that function only sorts the specified column in the dataset, without re-ordering the other columns. Instead we create a vector that shows what order rows should come in based off the columns we specify before re-arranging the rows using subsetting. Using only base R functions requires knowledge of a functions options, even for a standard operation for sorting. Here is the same code using the dplyr and lubridate package:
-```
+You can see that the sort function fails. Why? We cannot use the base R sort function because that function only sorts the specified column in the dataset, without re-ordering the other columns. Instead we create a vector that shows what order rows should come in based off the columns we specify before re-arranging the rows using subsetting. Using only base R functions requires knowledge of a functions options, even for a standard operation for sorting. Here is the same code using the dplyr and lubridate package:
+```r
 # install helper packages
 pacman::p_load(
   rio,  here,  dplyr,  janitor,  lubridate,  epikit
@@ -52,8 +48,8 @@ df <- import(here("surveillance_linelist_20141201.csv"))
 # sort using dplyr function arrange
 df <- df %>% arrange(mdy(`onset date`), gender)
 ```
-You can see this code that uses packages is very readable and similar to the SAS code:
-```
+You can see this code that uses packages is very readable and similar to the SAS code below. Make sure you have saved your SAS file somewhere for the relative path macro to work. 
+```SAS
 /* set recommended options */
 options compress=yes;
 options nofmterr;
@@ -76,15 +72,17 @@ run;
 
 ## Longer code comparison between SAS and R
 
-Let's say I want to take a line listing, and number each patient 1, 2, 3..., grouped by day, and region i.e. the numbers restart for each new day and region. This could be useful if, for instance, you later want to find all the first, or third patient that presented symptoms for a given day at a particular region.
+Here we show the difference between using vectorized functions in R, vs the data step in SAS that loops through each row in the data set. Vectorized operations in many programming languages allow a mathematical operation to be applied to multiple elements of a data set, meaning an entire data set, a column or row, or whatever subset of the data set you specify. 
+
+Let's say I want to take a line listing, and number each patient 1, 2, 3..., grouped by day, and region i.e. the numbers restart for each new day and region. This could be useful if, for instance, you later want to find all the first, or third patient that presented symptoms for a given day at a particular region. In other words, we want a running count that restarts for every day or region. 
 
 This is of moderate difficulty in SAS. We would first sort the data by date and region. SAS would then step through the data row-by-row and determine if the date and/or the region changes. This reflects how we would do this ourselves on pen and paper. 
 
 SAS creates two hidden columns that writes the value `1` if the date or region column is different from the preceding row, thus specifying a new date or region. It writes `0` elsewhere. If the value is `1` (meaning a new date or region), then it resets the count to `0`. There are a few peculiarities to this that we won't cover, but this is in summary how the code works. 
 
-You can copy the code below directly into your SAS editor and run it.
+You can copy the code below directly into your SAS editor and run it. Make sure you have already run some of the recommended options and relative folder macros in the previous section.  
 
-```         
+```SAS      
 /*Using by statement requires sorting*/
 proc sort data=df;
 	by onset_date adm3_name_det /* this is the region variable */;
@@ -108,9 +106,9 @@ run;
 
 By using the retain function, SAS retains the row count when the PDV re-initializes, before adding the 1 for the next row and outputting the result in the `running_count` column. SAS resets the `running_count` column when encountering a `1` in the hidden column, which indicates that the date or region has changed compared to the previous row (which is why sorting is required).
 
-In R, you write functions that apply to the entire dataset. 
+In R, we can do the same by giving to a specialized function called `row_number()` groups of rows disaggregated by onset date and region. 
 
-```    
+```  r  
 # here is the code to create a running count column
 df_onset_region_count <- df 
   %>% clean_names() %>% 
@@ -119,13 +117,13 @@ df_onset_region_count <- df
   select(onset_date, adm3_name_det, count)
 ```
 
-While the code may look cleaner, figuring out which functions to use is more difficult. Behind the scenes, R is translating this function into the C programming language (which better mirrors how a computer calculates sums at a machine level) and still steps through the data but in a more efficient method. While this method in R is not any faster than SAS (the SAS program has been heavily optimized over the decades), in SAS you are always limited to stepping through the data set row by row. 
+While the code may look cleaner, figuring out which functions to use may be more more difficult. Behind the scenes, R is translating this function into the C programming language (which better mirrors how a computer calculates sums at a machine level) and still steps through the data but in a more efficient vectorized method. While this method in R is not any faster than SAS (the SAS program has been heavily optimized over the decades), in SAS you are always limited to stepping through the data set row by row. 
 
 ### A quick note about looping
 
 You can always force R to loop through each row, counting the rows by group, similar to the SAS data step. But in many ways, understanding this code is more difficult than in SAS because it uses base R functions more heavily. And looping through each row in R is hundreds or even thousands of times slower than using functions that utilizing vectorized R functions as shown above. The example below only groups by unique date, not on region. 
 
-```
+```r
 # Get unique groups of dates
 unique_groups <- unique(df$`onset date`)
 
@@ -144,12 +142,12 @@ Hopefully this introductory example gives you a good idea of the major differenc
 
 ## Comparing the Data Step
 
-This and the next few sections showcase the same data manipulation steps in both SAS and R. These are designed to be inputted directly in your SAS and R console windows. The goal is to give you a peek into how SAS and R code can be different, but also alike. 
+This and the next few sections showcase the same data manipulation steps in both SAS and R. These are designed to be inputted directly in your SAS and R console windows. The goal is to give you a peek into how SAS and R code can be different, but also alike, through the use of R packages. 
 
 As you begin your journey in the R language, use these sections as a quick-start reference. We hope that the functions we show below represent the most commonly used functions in your day-to-day data analysis. 
 
 First we manipulate the line listing using commonly used SAS functions. 
-```{SAS}
+```SAS
 /*Rename variables. This is separate datastep because of how SAS initializes variables*/
 data df2;
 	set df;
@@ -213,7 +211,7 @@ data df3;
 run;
 ```
 And here is the same code, but written in R language, using the lubridate and dplyr packages:
-```
+```r
 df3 <- df %>% 
   
   # clean names - SAS does this automatically
@@ -281,19 +279,18 @@ df3 <- df %>%
   mutate(moved = district_det != district_res) %>% 
   
   #filter rows
-  filter(case_def == 'Confirmed')
+  filter(epilink == 'yes')
 ```
 At the basic level, both codes look roughly similar, and that was likely the intention with the dplyr package, which hides much of the programming complexity behind easy to use functions. 
 
-## Comparing PROC tables
+## Comparing PROC tables and reports
 
-The power of SAS lies in the numerous summary statistic reports that are able to be easily generated by simple proc statements. We try to re-create the most commonly used proc tables. SAS code on the left, and R code on the right.
+The power of SAS lies in the numerous summary statistic reports that are able to be easily generated by simple proc statements. We try to re-create the most commonly used proc tables. SAS code first, then the R code right below it:
 
 ### PROC Contents and PROC Summary
 These procedures give you an initial idea of the makeup of the dataset. 
 
-::::: columns
-::: column
+SAS:
 ```SAS
 /*general information and list of variables */
 proc contents data=df3;
@@ -304,33 +301,239 @@ proc summary data=df3 print;
 var _numeric_;
 run;
 ```
-:::
 
-::: column
+R:
 ```r
-str(df3) # shows type of each variable, and sample data
+str(df3) # short for structure, this shows type of each variable, and sample data
 summary(df3) # summary statistics for numeric variables
 ```
-:::
-:::::
+
 
 ### PROC Freq
-Proc Freq is one of the most powerful procedures that is commonly used. It is very flexible and can create a wide variety of different types of summary statistics. The code below produces a frequency table with percentages on one variable. 
+Proc Freq is one of the most powerful procedures commonly used. It is very flexible and can create a wide variety of different types of summary statistics. The code below produces a frequency table with percentages on one variable. 
 
-::::: columns
-::: column
+SAS:
 ```SAS
 /*one way frequency table in descending order*/
 proc freq data = df3 order=freq;
-	tables hospital;
+	tables hospital / missing;
+	where case_def = 'Confirmed';
 run;
 ```
-:::
 
-::: column
+R:
 ```r
 # using dply and janitor to get a one way freq table
-df3 %>% tabyl(hospital) %>% arrange(-n)
+df3 %>% filter(case_def == 'Confirmed') %>% tabyl(hospital) %>% arrange(-n)
 ```
-:::
-:::::
+
+This code produces a two-way frequency table:
+
+SAS:
+```SAS
+/*two way frequency table for fever vs. chills, disaggregated by cough*/
+proc sort data = df3; by cough; run;
+proc freq data = df3;
+	tables fever*chills / nocol norow;
+	by cough;
+run; 
+```
+
+R:
+```r
+# two way frequency table
+df3 %>% tabyl(fever, chills, cough) %>% 
+  adorn_totals("row") %>% 
+  adorn_percentages("all") %>% 
+  adorn_pct_formatting(digits=2) %>% 
+  adorn_ns()
+```
+
+
+### PROC Sql
+
+Proc SQL is another power procedure that is often used to create summary statistics. 
+Here we calculate the average weight and max weight, by age group. 
+
+SAS:
+```SAS
+proc sql;
+  select sum(wt__kg_) / count(wt__kg_) as average_weight, max(wt__kg_) as max_weight, age_group
+  from df3
+  where case_def = 'Confirmed'
+  group by age_group;
+quit;
+```
+
+R:
+```r
+df3 %>% 
+  group_by(age_cat) %>% 
+  summarise(
+    average_weight = mean(wt_kg, na.rm=T),
+    max_weight = max(wt_kg, na.rm=T)
+  )
+```
+
+## Macro functions
+Some of the true capabilities of R shine when developing more complex functions. Let's say we want to automate a report for each district of residence showing the first five patients and their home latitude and longitude. 
+
+There is a simple way to do this using PROC Print. This code below prints all rows disaggregated by district of residence. 
+```SAS
+proc sort data=df3; by district_res; run;
+proc print data = df3;
+	var case_id date_onset gender lat lon;
+	by district_res;
+run;
+```
+But let's say we want something more automated and extensible. That means writing a function where we can enter parameters such as the disease of interest or in this case the specific hospital of interest. In other words, we want a function that allows us to customize the report according to parameters set at runtime. 
+
+Let's start with R first this time. In R, because the language has been built to handle objects other than datasets, such as vectors and lists, the code is somewhat simple. 
+
+```r
+print_bydistrict <- function (hospital_want) {
+  # create a vector that contains all the unique districts
+  district_res_unique <- unique(df3$district_res)
+  
+  #create a for loop to loop through the unique districts
+  for (item in district_res_unique) {
+    
+    # create title
+    title <- paste("First five line listings for district:", item)
+    cat(title, "\n")
+    
+    # create table
+    print(df3 %>% 
+            filter(district_res == item,
+                   hospital == hospital_want) %>% 
+            select(case_id, date_onset, gender, lat, lon) %>% 
+            head(5))
+    cat("\n")
+  }
+}
+
+print_bydistrict('Port Hospital')
+```
+
+Thinking through similar steps in SAS: we would first need a list of the unique district of residence because each district would have their own report. We would then run the report for each unique district. 
+
+This is somewhat difficult because while PROC Freq may immediately display all of the unique value for district of residence, it is in a format that is not usable for the computer. Instead, we have to rely on PROC Sql to insert all unique values of `district_res` into a macro variable.
+
+```SAS
+proc sql noprint;
+select distinct district_res
+	into :district_res1-
+	from df3
+	where district_res ne '';
+quit;
+
+%put _user_;
+```
+The name of these macro variables are `&district_res1`, `&district_res2`,... all the way to that last unique value, which in this case is `&district_res9`. 
+
+Then we use another PROC Sql to get the number of unique districts into a variable named `district_count`. 
+
+```SAS
+proc sql noprint;
+select count(distinct district_res)
+	into :district_count
+	from df3
+	where district_res ne '';
+quit;
+```
+
+Finally we can use a macro code to run a PROC Print for each unique value of `district_res`. 
+
+```SAS
+%macro print_bydistrict (start, stop, hospital_want='Port Hospital');
+	%do num=&start %to &stop;
+	%let district_res_num = %sysfunc(putn(&num, 1.));
+	title "First five line listings for district: &&district_res&district_res_num";
+	proc print data = df3 (obs=5);
+	where district_res = "&&district_res&district_res_num" and hospital = &hospital_want;
+	var case_id date_onset gender lat lon;
+	run;
+	%end;
+%mend;
+
+%print_bydistrict(1,&district_count)
+```
+
+This program is difficult to read and understand visually. It runs a do loop from a numeric parameter: `start` to another numeric parameter `stop`. In this case, when we call this macro, we are running from the values `1` to `&district_count`, which is 9. 
+
+The program merges this value with the macro variable name `&district_res`, to become `district_res1`, `district_res2`, etc. So in the first loop, the macro processor sees this: `where district_res = "&district_res1`. Which then resolves into the first district of `Central I`. 
+
+
+## Graphing Charts
+When it comes to graphs and charts, both languages are equally difficult to learn and write. We've all had the experience where a simple change in axis values required hours of fine tuning. This is still generally the case. Below we will just produce a few examples of basic charts and graphs in each program. 
+
+```SAS
+/*create a table to count rows by district*/
+proc sql;
+create table district_det_summary as
+select distinct district_det, count(*) as count
+from df3
+where case_def = 'Confirmed'
+group by district_det;
+quit;
+
+/*create the chart using the summary table created above*/
+proc sgplot data=district_det_summary;
+	vbar district_det / response=count;
+run;
+```
+
+In R, we use the popular ggplot package to create charts:
+```r
+case_counts_district <- surv %>% 
+  group_by(district) %>% 
+  summarize(ncases=n())
+
+ggplot(data = case_counts_district, mapping = aes(
+  x = district,
+  y = ncases
+)) + 
+  geom_col()
+```
+
+Next we create histograms. The first histogram graphs the weight distribution of the cases. The second code chunk creates multiple panels of histograms, disaggregated by district of detection. 
+
+```SAS
+/*one histogram of all weights*/
+proc sgplot data=df3;
+	histogram wt__kg_;
+run;
+
+/*histogram panel by district*/
+proc sgpanel data=df3;
+	panelby district_det;
+	histogram wt__kg_;
+run;
+```
+
+R:
+```r
+# base R functions only
+hist(df3$wt_kg)
+
+# using ggplot
+ggplot(data = df3, mapping = aes(
+  x = wt_kg
+  ))+
+  geom_histogram()
+
+/*histogram panel by district*/
+df3 %>% 
+ggplot(mapping = aes(
+  x = wt_kg
+)) + geom_histogram() + 
+  facet_wrap(~district)
+```
+
+## Simple Statistics
+
+
+## Conclusions
+
+
+
