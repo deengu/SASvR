@@ -9,13 +9,21 @@ Moving from a SAS environment to the R programming language requires a paradigm 
 
 ### Difference in approach
 
-The biggest difference between the two for data analysis is that R is a full programming language and works with numbers, lists, matrices, and tables. R treats these as objects, and you write functions to change these objects. There are often many ways to achieve your intended result, and that flexibility may initially be overwhelming. In SAS, you primarily work with data tables and manipulate data through the data step, which steps through the data row by row. This difference in changing or mutating different types of objects as a whole, vs. stepping through the dataset row by row means the functions you use in R are more abstract, especially when used in combination with other functions.
+The biggest difference between the two for data analysis is that R is a full programming language and works with numbers, lists, matrices, and tables. Tables can also be thought of as multiple lists of numbers put together. R treats all of these as objects, and you write functions to change these objects. There are often many ways to achieve your intended result, and that flexibility may initially be overwhelming. 
+
+In SAS, you primarily work with data tables and and the outputs are either reports or new tables. The advantage is that this is just like Excel: everything you work with is a table, which is easy to understand and view. The limitation is that more complex programs are harder to write, where for instance, you would need one column of data to serve as the input of another program. 
 
 The other big difference is that to summarize data and produce reports in SAS, you use procedure (PROC) steps that guide you in generating reports and summary statistics. In R, the summary functions are more rudimentary, giving you the flexibility to format your table in a wide variety of options, but which comes with a higher learning curve. 
 
-### A quick note about packages
+### Sample Dataset
 
-The R programming language is very extensible, meaning that just like many browsers, you can download and install extensions that extend the functionality beyond the base R language. We will be using many of the popular packages in our lessons below. The benefits of using packages is ease of use. The functions included with many of these packages simplify or combine base R functions. Many end users rely heavily on these packages in day to day work. The negative is that these packages may hide much of the complexities of the underlying programming. 
+The same Github repository has a sample dataset that is used for this guide. Please download and put in the same working directory as your SAS and R code file. This dataset was provided to me from [Applied Epi](https://appliedepi.org/), a nonprofit organization strengthening epidemiological practice through training, tools, and support. 
+
+### About packages
+
+The R programming language is very extensible, meaning that just like many browsers, you can download and install extensions that extend the functionality beyond the base R language. We will be using many of the popular packages in our lessons below. The benefits of using packages is ease of use. The functions included with many of these packages simplify or combine base R functions. Many end users rely heavily on these packages in day to day work. The negative is that these packages may hide some of the complexities of the underlying programming. 
+
+The ability to write custom packages for very specialized use cases is one reason many have converted to R. While you may be able to do everything in SAS as in R, the ability for R to improve and adapt through the use of new packages written by fellow epis means the pace of advancement is very fast. 
 
 Data problems can be solved without any packages, using only base R functions that come with the standard install. But that requires in-depth knowledge of base R functions (as you will see in some of the examples below). Here's a quick example below that shows sorting two columns using packages vs. base R functions only. 
 

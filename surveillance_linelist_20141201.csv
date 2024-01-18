@@ -1,0 +1,686 @@
+row_num,case_id,onset date,gender,age,age unit,hospital,wt (kg),ht (cm),fever,chills,cough,aches,vomit,temp,bmi,adm3_name_res,admin3pcod,adm3_name_det,lab_confirmed,date of report,lat,lon,epilink
+1,694928,11/9/2014,m,23,,Other,70,147,yes,no,yes,no,no,39.2,32.39390994,,SL040102,Central II,FALSE,11/9/2014,8.453538572,-13.20963625,no
+2,86340d,10/30/2014,f,1,years,Port Hospital,18,29,yes,no,yes,no,no,39.4,214.0309156,Mountain Rural,SL040102,Central II,TRUE,10/31/2014,8.470122275,-13.21314431,yes
+3,92d002,8/16/2014,f,16,years,,59,133,yes,no,yes,no,yes,39.3,33.35406185,Mountain Rural,SL040102,Mountain Rural,TRUE,8/20/2014,8.454882422,-13.21094789,yes
+4,544bd1,8/29/2014,f,10,years,,39,106,yes,no,yes,no,yes,39.3,34.70986116,East II,SL040204,East II,TRUE,8/30/2014,8.484896061,-13.22525323,yes
+5,6056ba,10/20/2014,f,0,years,,-11,24,yes,yes,yes,no,yes,38.6,-190.9722222,West III,SL040208,West III,TRUE,10/21/2014,8.467532548,-13.26645243,yes
+6,eb5aeb,10/28/2014,f,8,years,Port Hospital,34,104,yes,no,yes,no,yes,38.2,31.43491124,West III,SL040208,West III,FALSE,11/1/2014,8.452985424,-13.26243993,yes
+7,e64e04,10/6/2014,f,7,years,,32,91,no,no,yes,yes,yes,36.5,38.64267601,Mountain Rural,SL040102,Mountain Rural,TRUE,10/10/2014,8.474794458,-13.22028905,yes
+8,5a65bb,9/21/2014,m,4,years,Port Hospital,41,74,yes,yes,yes,no,yes,39.1,74.87216947,Mountain Rural,SL040102,Mountain Rural,TRUE,9/22/2014,8.462900412,-13.21564488,yes
+9,2ae019,5/6/2014,m,37,years,Other,81,167,yes,no,yes,no,no,39.5,29.04370899,West III,SL040208,West III,TRUE,5/11/2014,8.452506081,-13.26809408,yes
+10,7ca4c0,9/29/2014,m,11,years,Port Hospital,56,163,yes,no,yes,no,no,38.9,21.07719523,West III,SL040208,West III,TRUE,9/30/2014,8.456236008,-13.26695002,yes
+11,699d82,11/27/2014,m,27,years,Port Hospital,76,178,yes,yes,yes,no,no,39.4,23.98687034,Mountain Rural,SL040102,Mountain Rural,FALSE,11/28/2014,8.465821021,-13.21178312,yes
+12,30af4f,,f,6,years,Port Hospital,30,75,no,no,yes,no,yes,37.5,53.33333333,West I,SL040206,West I,TRUE,11/10/2014,8.47847955,-13.24747771,yes
+13,a06123,9/10/2014,m,10,years,,55,125,yes,no,no,no,no,38,35.2,Mountain Rural,SL040102,Mountain Rural,TRUE,9/15/2014,8.469755298,-13.21416774,yes
+14,27c07d,9/12/2014,m,20,years,Other,72,151,yes,yes,yes,yes,no,38.8,31.57756239,West II,SL040207,West II,TRUE,9/15/2014,8.461030291,-13.23493492,yes
+15,8f654c,10/19/2014,f,6,years,Military Hospital,37,86,yes,no,no,no,yes,39.2,50.02704164,West II,SL040207,West II,TRUE,10/19/2014,8.465708204,-13.23316849,yes
+16,dc1730,9/26/2014,m,13,years,Central Hospital,62,148,,,,,,36.2,28.30533236,West III,SL040208,West III,FALSE,9/27/2014,8.456338428,-13.26466626,yes
+17,9b5dec,9/7/2014,m,22,years,St. Mark's Maternity Hospital (SMMH),60,159,yes,no,yes,no,yes,38.2,23.7332384,West II,SL040207,West II,TRUE,9/11/2014,8.466538458,-13.23375243,yes
+18,f8cd8f,10/18/2014,f,11,years,Port Hospital,47,114,no,no,yes,no,yes,37.5,36.16497384,West II,SL040207,West II,TRUE,10/19/2014,8.467451204,-13.23348154,yes
+19,e4bee8,6/22/2014,f,3,years,Other,30,63,yes,no,yes,no,no,39.1,75.58578987,Central I,SL040201,Central I,TRUE,6/25/2014,8.47847094,-13.22992349,yes
+20,f23f4e,9/14/2014,m,60,years,Other,84,245,yes,no,no,no,yes,38.9,13.9941691,Central II,SL040202,Central II,TRUE,9/18/2014,8.487316046,-13.23619714,yes
+21,6e9925,9/9/2014,f,26,years,Other,69,148,yes,no,no,no,yes,39.1,31.50109569,West I,SL040206,Central II,FALSE,9/10/2014,8.483711029,-13.24692135,yes
+22,668458,10/21/2014,m,19,years,St. Mark's Maternity Hospital (SMMH),68,153,no,yes,yes,no,no,37.2,29.0486565,West III,SL040208,West III,TRUE,10/23/2014,8.462788073,-13.26936217,yes
+23,7bb784,10/21/2014,m,9,months,Central Hospital,79,175,yes,no,yes,no,no,38.7,25.79591837,Mountain Rural,SL040102,Mountain Rural,TRUE,10/22/2014,8.463369754,-13.21540756,yes
+24,d74a9e,11/12/2014,m,18,years,Other,59,153,yes,no,yes,no,yes,38.9,25.20398137,East II,SL040204,East II,TRUE,11/12/2014,8.482723023,-13.212511,yes
+25,2772c3,10/24/2014,m,2,years,,30,67,yes,no,yes,no,no,39.8,66.83002896,Mountain Rural,SL040102,Central II,TRUE,10/25/2014,8.462216115,-13.22137963,yes
+26,6f8014,11/17/2014,m,16,years,Central Hospital,63,141,yes,no,yes,no,no,38.7,31.68854685,West II,SL040207,West II,FALSE,11/19/2014,8.468414943,-13.24671087,yes
+27,212254,8/27/2014,m,1,years,Port Hospital,15,50,yes,no,yes,no,yes,38.6,60,East II,SL040204,East II,TRUE,8/31/2014,8.485828479,-13.22494186,yes
+28,cb8f4e,10/28/2014,f,21,years,Port Hospital,62,128,yes,yes,yes,no,no,38.9,37.84179688,East II,SL040204,East II,TRUE,10/29/2014,8.483078557,-13.21929155,yes
+29,5b62bc,11/18/2014,f,10,years,Other,48,128,yes,no,yes,no,yes,39.2,29.296875,Mountain Rural,SL040102,Mountain Rural,TRUE,11/19/2014,8.463055584,-13.21754284,yes
+30,4c8369,10/26/2014,f,27,years,St. Mark's Maternity Hospital (SMMH),66,135,yes,no,yes,no,yes,39.2,36.21399177,Central II,SL040202,Central II,TRUE,10/28/2014,8.486416822,-13.23816226,yes
+31,fc801b,,f,17,years,,49,114,yes,no,no,no,yes,39.4,37.7039089,Mountain Rural,SL040102,Mountain Rural,FALSE,11/12/2014,8.45003308,-13.21520016,yes
+32,890de4,8/20/2014,f,30,years,Port Hospital,68,185,no,no,yes,yes,no,37.4,19.86851717,West II,SL040207,West II,TRUE,8/21/2014,8.470057364,-13.23295639,yes
+33,4360db,9/30/2014,m,22,years,Other,60,159,yes,no,yes,no,no,38.6,23.7332384,East I,SL040203,East I,TRUE,10/1/2014,8.485394728,-13.2152327,yes
+34,5c033b,9/14/2014,f,15,years,Other,51,140,yes,no,yes,no,no,38.1,26.02040816,East II,SL040204,East II,TRUE,9/19/2014,8.482889433,-13.21211793,yes
+35,1e55cd,9/20/2014,m,8,years,Military Hospital,46,122,yes,no,yes,no,no,39.8,30.90567052,East I,SL040203,East I,TRUE,9/27/2014,8.481094948,-13.20982313,yes
+36,5b98ea,11/12/2014,m,12,years,Other,60,144,no,yes,yes,no,no,36.3,28.93518519,Central II,SL040202,Central II,FALSE,11/13/2014,8.478005519,-13.23643369,yes
+37,53f6ed,9/18/2014,f,0,years,,4,17,yes,yes,yes,no,no,38.7,138.4083045,West III,SL040208,West III,TRUE,9/23/2014,8.457538781,-13.25884469,yes
+38,9d4019,5/13/2014,m,17,years,Military Hospital,61,130,no,no,yes,no,yes,37.6,36.09467456,West III,SL040208,West III,TRUE,5/16/2014,8.461098345,-13.26737123,yes
+39,7c06a7,11/25/2014,m,1,years,St. Mark's Maternity Hospital (SMMH),17,42,no,no,no,no,no,36.7,96.37188209,West III,SL040208,West III,TRUE,11/28/2014,8.479980308,-13.26458687,yes
+40,26c491,9/25/2014,f,15,years,Port Hospital,58,122,yes,no,no,no,yes,38.8,38.96801935,East III,SL040205,East III,TRUE,9/25/2014,8.4629337,-13.20698463,yes
+41,069ea8,8/1/2014,f,16,years,Military Hospital,52,134,yes,no,yes,no,no,39.5,28.95967922,West III,SL040208,Central II,FALSE,8/3/2014,8.459997468,-13.26745458,yes
+42,8fedec,9/6/2014,f,1,years,Port Hospital,15,36,yes,no,yes,no,yes,39.5,115.7407407,Mountain Rural,SL040102,Mountain Rural,TRUE,9/9/2014,8.462755199,-13.21554162,yes
+43,e2035e,11/23/2014,m,5,years,Military Hospital,42,98,yes,no,yes,no,no,38.3,43.73177843,West II,SL040207,West II,TRUE,11/24/2014,8.460272354,-13.2238546,yes
+44,0ae14e,7/3/2014,f,15,years,Military Hospital,52,93,yes,no,yes,no,yes,38.6,60.12255752,Central II,SL040202,Central II,TRUE,7/4/2014,8.478590373,-13.23941485,yes
+45,497372,,m,10,years,Other,53,134,no,yes,yes,no,yes,37.3,29.51659612,West III,SL040208,West III,TRUE,7/31/2014,8.475087139,-13.26809237,yes
+46,137be7,9/23/2014,m,37,years,Port Hospital,84,167,yes,yes,yes,yes,yes,39.5,30.11940191,Mountain Rural,SL040102,Mountain Rural,FALSE,9/26/2014,8.452982858,-13.2097574,yes
+47,1fb87a,10/25/2014,m,22,years,Military Hospital,63,164,yes,no,no,no,no,39.9,23.42355741,West I,SL040206,West I,TRUE,10/27/2014,8.480347472,-13.25002969,yes
+48,1a1418,9/14/2014,f,30,years,Port Hospital,61,170,yes,yes,yes,no,yes,39.8,21.10726644,Mountain Rural,SL040102,Mountain Rural,TRUE,9/15/2014,8.45561859,-13.24142208,yes
+49,77d9e0,9/26/2014,f,8,years,,48,94,,,,,,37.1,54.32322318,East II,SL040204,East II,TRUE,9/26/2014,8.484805219,-13.22393282,yes
+50,a6ff85,7/5/2014,m,21,years,,63,154,yes,no,yes,no,yes,39.4,26.56434475,Mountain Rural,SL040102,Mountain Rural,TRUE,7/7/2014,8.46193617,-13.22158791,yes
+51,1704ad,11/2/2014,m,35,years,Other,74,154,yes,yes,yes,no,no,39.1,31.20256367,West II,SL040207,West II,FALSE,11/3/2014,8.472398146,-13.23398674,yes
+52,d3ea55,10/28/2014,f,2,years,Military Hospital,16,60,yes,no,yes,no,no,38.3,44.44444444,East II,SL040204,East II,TRUE,10/31/2014,8.48308469,-13.21420089,yes
+53,f2fc3f,9/28/2014,f,20,years,Port Hospital,63,134,yes,no,yes,no,no,38.9,35.0857652,East II,SL040204,East II,TRUE,9/28/2014,8.485841606,-13.22509286,yes
+54,3ae04e,9/6/2014,f,9,years,Port Hospital,40,98,yes,no,no,no,yes,38.8,41.64931279,Mountain Rural,SL040102,Mountain Rural,TRUE,9/13/2014,8.482236404,-13.22388171,yes
+55,c2e83e,7/7/2014,m,52,years,,63,219,yes,no,yes,no,yes,39.3,13.13567273,East III,SL040205,East III,TRUE,7/8/2014,8.476559283,-13.20937762,yes
+56,4b501e,7/30/2014,Unknown,,years,Military Hospital,58,89,yes,no,yes,no,yes,38.3,73.22307789,West III,SL040208,West III,FALSE,8/7/2014,8.450039978,-13.26663897,yes
+57,a4585b,11/23/2014,m,23,years,Central Hospital,65,162,yes,no,yes,no,no,39.6,24.76756592,Central I,SL040201,Central I,TRUE,11/24/2014,8.472701366,-13.22334856,yes
+58,fba9ac,9/12/2014,f,9,years,Port Hospital,47,112,yes,yes,yes,no,no,38.9,37.46811224,West III,SL040208,West III,TRUE,9/24/2014,8.454966837,-13.26427603,yes
+59,1cd849,10/21/2014,f,4,years,Port Hospital,42,66,yes,no,yes,no,yes,39,96.41873278,Mountain Rural,SL040102,Mountain Rural,TRUE,10/22/2014,8.461510734,-13.22210901,yes
+60,928277,10/8/2014,m,0,years,Central Hospital,12,34,yes,no,yes,no,yes,38.5,103.8062284,West III,SL040208,West III,TRUE,10/12/2014,8.453813139,-13.26668525,yes
+61,9e0998,5/26/2014,m,3,years,Other,24,70,yes,no,yes,no,no,38.7,48.97959184,,SL040205,Central II,FALSE,5/27/2014,8.481005935,-13.20953524,no
+62,0d315c,,f,28,years,St. Mark's Maternity Hospital (SMMH),73,192,yes,no,no,no,yes,38.2,19.80251736,Mountain Rural,SL040102,Mountain Rural,TRUE,9/2/2014,8.47782874,-13.22095247,yes
+63,7b7f62,,f,25,years,,66,143,yes,no,yes,no,yes,39.1,32.27541689,Mountain Rural,SL040102,Mountain Rural,TRUE,6/25/2014,8.453079763,-13.21609596,yes
+64,9a944a,,m,36,years,Central Hospital,73,158,yes,no,no,no,yes,39.5,29.24210864,Mountain Rural,SL040102,Mountain Rural,TRUE,9/28/2014,8.464967683,-13.21418945,yes
+65,2d4c92,8/5/2014,f,14,years,Port Hospital,61,131,yes,yes,yes,no,yes,38.9,35.54571412,Central II,SL040202,Central II,TRUE,8/9/2014,8.486294288,-13.23711782,yes
+66,27afb4,9/14/2014,f,16,years,Military Hospital,56,121,yes,no,no,no,yes,38.9,38.2487535,Mountain Rural,SL040102,Mountain Rural,FALSE,9/28/2014,8.457509062,-13.21053605,yes
+67,840043,8/25/2014,f,13,years,Other,59,125,yes,yes,yes,no,yes,38.9,37.76,Mountain Rural,SL040102,Mountain Rural,TRUE,9/4/2014,8.451347112,-13.21936015,yes
+68,43b220,9/15/2014,m,8,years,Military Hospital,44,119,yes,no,yes,no,no,39.1,31.07125203,East II,SL040204,East II,TRUE,9/16/2014,8.470646898,-13.21243498,yes
+69,6e3dfe,8/21/2014,m,20,years,,59,128,yes,no,yes,no,yes,38.7,36.01074219,West II,SL040207,West II,TRUE,8/29/2014,8.468094444,-13.23963799,yes
+70,f2b659,11/11/2014,m,45,years,Port Hospital,79,231,yes,no,yes,no,yes,39.3,14.80482,West III,SL040208,West III,TRUE,11/11/2014,8.46373673,-13.26297352,yes
+71,eadc76,9/11/2014,f,19,,,65,122,yes,no,yes,yes,yes,38.8,43.67105617,West II,SL040207,West II,FALSE,9/12/2014,8.475179339,-13.23693009,yes
+72,cb8d85,10/5/2014,m,4,years,Other,43,80,yes,no,no,no,no,39,67.1875,West II,SL040207,West II,TRUE,10/6/2014,8.46790521,-13.23509344,yes
+73,7.79E+03,9/30/2014,f,6,years,Port Hospital,35,90,yes,yes,yes,no,no,38.8,43.20987654,Mountain Rural,SL040102,Mountain Rural,TRUE,10/2/2014,,,yes
+74,15d750,9/10/2014,m,23,years,Port Hospital,72,134,yes,no,yes,yes,yes,39.3,40.09801738,West II,SL040207,West II,TRUE,9/14/2014,8.467531484,-13.23730918,yes
+75,f8d6c3,10/19/2014,f,11,years,Central Hospital,57,126,yes,no,yes,no,no,38.6,35.90325019,Central I,SL040201,Central I,TRUE,10/23/2014,8.479539185,-13.22735675,yes
+76,1.53E+11,10/22/2014,m,17,years,Military Hospital,56,159,yes,yes,yes,no,yes,39.2,22.15102251,West II,SL040207,West II,FALSE,10/23/2014,,,yes
+77,c62127,7/2/2014,m,5,years,Port Hospital,60,87,yes,no,yes,no,no,38.9,79.27070947,West III,SL040208,West III,TRUE,7/3/2014,8.458107379,-13.2593132,yes
+78,764d43,10/3/2014,m,22,years,,67,142,yes,no,yes,no,no,40.1,33.22753422,West II,SL040207,West II,TRUE,10/3/2014,8.473817905,-13.25416788,yes
+79,d5f42d,10/24/2014,f,13,years,Other,45,122,no,no,yes,no,yes,37.2,30.23380812,West I,SL040206,West I,TRUE,10/26/2014,8.485690348,-13.24845002,yes
+80,b37e78,10/29/2014,m,7,years,,48,100,yes,no,no,yes,no,39.1,48,Mountain Rural,SL040102,Mountain Rural,TRUE,11/4/2014,8.477634242,-13.22056026,yes
+81,24717d,10/10/2014,m,15,years,,50,149,no,no,yes,no,yes,38,22.52150804,Mountain Rural,SL040102,Central II,FALSE,10/13/2014,8.467896531,-13.21173928,yes
+82,af1c1f,6/29/2014,f,22,years,Port Hospital,64,135,yes,no,yes,no,no,39.2,35.11659808,Central I,SL040201,Central I,TRUE,6/29/2014,8.479554755,-13.23385857,yes
+83,b7b32a,11/3/2014,f,19,years,St. Mark's Maternity Hospital (SMMH),52,119,yes,no,yes,no,yes,38.4,36.72057058,West I,SL040206,West I,TRUE,11/3/2014,8.475701874,-13.25150869,yes
+84,25d45b,11/11/2014,f,21,years,,58,142,yes,no,yes,no,yes,39.9,28.7641341,Mountain Rural,SL040102,Mountain Rural,TRUE,11/11/2014,8.47283212,-13.21399911,yes
+85,c146f2,11/25/2014,m,16,years,,62,175,yes,no,yes,no,no,40,20.24489796,West II,SL040207,West II,TRUE,11/26/2014,8.470023532,-13.2383652,yes
+86,b7a231,11/24/2014,f,9,years,St. Mark's Maternity Hospital (SMMH),47,102,yes,no,yes,no,no,39.7,45.17493272,West III,SL040208,West III,FALSE,11/25/2014,8.481933074,-13.26619685,yes
+87,30ed05,8/4/2014,f,25,years,Port Hospital,56,114,yes,no,yes,no,yes,39.5,43.09018159,West II,SL040207,West II,TRUE,8/7/2014,8.472157108,-13.23183588,yes
+88,435e4f,9/17/2014,f,0,years,,-6,23,yes,no,yes,no,no,38.4,-113.4215501,Mountain Rural,SL040102,Mountain Rural,TRUE,9/19/2014,8.462443981,-13.22045478,yes
+89,8a6984,9/8/2014,f,19,years,Other,60,139,yes,no,yes,no,no,39.7,31.05429326,West II,SL040207,West II,TRUE,9/12/2014,8.466865978,-13.23335326,yes
+90,e83df3,,m,22,years,Port Hospital,68,169,yes,no,yes,no,yes,38.8,23.80869017,West II,SL040207,West II,TRUE,11/18/2014,8.461222151,-13.2232816,yes
+91,e88337,11/16/2014,m,41,years,Central Hospital,87,211,yes,yes,yes,no,yes,39.4,19.54134004,Mountain Rural,SL040102,Mountain Rural,FALSE,11/17/2014,8.463262527,-13.22260477,yes
+92,9e0ce3,10/29/2014,f,2,years,Port Hospital,42,45,yes,no,yes,no,no,40.3,207.4074074,West III,SL040208,West III,TRUE,10/30/2014,8.479773004,-13.2629609,yes
+93,c899b0,9/4/2014,f,13,years,,55,138,yes,yes,no,no,no,39.2,28.88048729,East I,SL040203,East I,TRUE,9/4/2014,8.488731507,-13.21568093,yes
+94,a52491,9/25/2014,f,12,years,Port Hospital,55,118,yes,no,yes,yes,yes,38.3,39.50014364,West II,SL040207,West II,TRUE,9/27/2014,8.467038945,-13.24665996,yes
+95,40202a,11/6/2014,f,6,years,Central Hospital,43,95,yes,no,yes,no,no,39.3,47.64542936,Mountain Rural,SL040102,Mountain Rural,TRUE,11/7/2014,8.45424124,-13.20825629,yes
+96,152abc,9/24/2014,f,22,years,Port Hospital,52,131,yes,no,no,no,no,39.3,30.3012645,West II,SL040207,West II,FALSE,9/25/2014,8.471778028,-13.23438233,yes
+97,aba6e2,9/29/2014,Unknown,,years,Port Hospital,48,68,yes,no,yes,no,yes,38.7,103.8062284,West I,SL040206,West I,TRUE,10/1/2014,8.482729529,-13.24749571,yes
+98,e97396,9/26/2014,m,27,years,Port Hospital,65,115,yes,no,yes,no,no,38.1,49.14933837,West III,SL040208,West III,TRUE,9/27/2014,8.465053707,-13.26364781,yes
+99,c3c129,10/9/2014,m,23,years,,67,150,yes,yes,no,no,no,38.5,29.77777778,West II,SL040207,West II,TRUE,10/11/2014,8.469805662,-13.23692546,yes
+100,425730,9/15/2014,m,20,years,,60,114,yes,no,yes,no,no,38.5,46.16805171,Mountain Rural,SL040102,Central II,TRUE,9/22/2014,8.452485003,-13.21395846,yes
+101,2955ba,10/12/2014,m,31,years,Central Hospital,72,205,yes,no,yes,no,yes,39.1,17.13265913,West III,SL040208,Central II,FALSE,10/13/2014,8.460007113,-13.25228778,yes
+102,00da2b,11/17/2014,f,10,years,Military Hospital,49,115,yes,no,yes,yes,yes,38.8,37.0510397,Mountain Rural,SL040102,Mountain Rural,TRUE,11/20/2014,8.453039876,-13.20896052,yes
+103,32d4ad,9/6/2014,f,10,years,Military Hospital,40,107,yes,no,yes,no,no,39.7,34.93754913,Central I,SL040201,Central I,TRUE,9/12/2014,8.474015863,-13.22309787,yes
+104,2d7305,10/26/2014,f,1,years,,12,34,yes,yes,yes,yes,yes,38.8,103.8062284,West II,SL040207,West II,TRUE,10/29/2014,8.464613137,-13.23353504,yes
+105,5167ee,11/16/2014,m,2,years,Military Hospital,30,55,yes,yes,yes,no,no,39.3,99.17355372,East II,SL040204,East II,TRUE,11/18/2014,8.469030168,-13.21174768,yes
+106,2c3a98,9/30/2014,f,13,years,Other,44,134,,,,,,37.5,24.50434395,West III,SL040208,West III,FALSE,10/2/2014,8.474236918,-13.26455873,yes
+107,e4b6b4,9/23/2014,f,18,years,Port Hospital,59,136,yes,no,yes,no,no,39.3,31.89878893,Mountain Rural,SL040102,Mountain Rural,TRUE,9/25/2014,8.464375979,-13.22382651,yes
+108,87713c,10/20/2014,m,40,years,Port Hospital,65,182,yes,no,yes,no,no,38,19.62323391,Central I,SL040201,Central I,TRUE,10/21/2014,8.476943041,-13.23439318,yes
+109,5a7acc,9/1/2014,f,13,years,Central Hospital,63,148,no,yes,yes,yes,yes,36.2,28.76186998,West II,SL040207,West II,TRUE,9/12/2014,8.469832832,-13.23736668,yes
+110,99e8fa,,m,19,years,Port Hospital,71,150,no,no,yes,no,yes,37,31.55555556,Central I,SL040201,Central I,TRUE,6/29/2014,8.474048895,-13.22500894,yes
+111,f1b281,10/23/2014,m,47,years,Central Hospital,95,188,,,,,,37.7,26.87867813,West II,SL040207,West II,FALSE,10/24/2014,8.460445332,-13.23351864,yes
+112,df9f64,10/26/2014,f,7,months,Port Hospital,49,72,no,no,yes,no,yes,36.3,94.52160494,East II,SL040204,East II,TRUE,10/27/2014,8.475302237,-13.2112848,yes
+113,7f82ff,10/28/2014,m,27,years,Military Hospital,75,179,yes,no,no,no,no,39.3,23.40750913,East II,SL040204,East II,TRUE,10/30/2014,8.476642614,-13.21097165,yes
+114,8a3c52,9/27/2014,f,2,years,Port Hospital,17,33,yes,no,yes,no,yes,38.9,156.1065197,West II,SL040207,West II,TRUE,9/27/2014,8.466989004,-13.23204236,yes
+115,a748cf,10/24/2014,m,11,years,Central Hospital,64,155,,,,,,36.9,26.63891779,Mountain Rural,SL040102,Mountain Rural,TRUE,10/25/2014,8.467463226,-13.21340147,yes
+116,e74fd9,9/24/2014,f,14,years,,64,137,no,no,yes,no,no,37,34.0987799,West I,SL040206,West I,FALSE,9/27/2014,8.485138896,-13.24680902,yes
+117,21957a,11/1/2014,f,4,years,Military Hospital,39,82,yes,no,yes,no,yes,39.5,58.00118977,West III,SL040208,West III,TRUE,11/3/2014,8.455428465,-13.26574571,yes
+118,7aa231,9/17/2014,f,27,years,,67,154,yes,no,yes,no,yes,38.9,28.25096981,East II,SL040204,East II,TRUE,9/19/2014,8.478573096,-13.21176215,yes
+119,b458e2,9/12/2014,f,2,years,Other,32,47,,,,,,36.8,144.8619285,Mountain Rural,SL040102,Mountain Rural,TRUE,9/13/2014,8.475507052,-13.21879964,yes
+120,a0ab0d,11/1/2014,m,28,years,Port Hospital,62,161,yes,no,no,no,yes,39.5,23.91883029,West II,SL040207,West II,TRUE,11/2/2014,8.483293432,-13.25572567,yes
+121,8188cd,8/2/2014,f,4,years,Port Hospital,34,57,yes,no,yes,yes,no,39.4,104.6475839,,SL040208,Central II,FALSE,8/3/2014,8.463342176,-13.26119508,no
+122,008ea7,10/22/2014,f,5,years,Port Hospital,47,78,yes,no,yes,no,no,39,77.25180802,Mountain Rural,SL040102,Mountain Rural,TRUE,10/22/2014,8.468635012,-13.21337284,yes
+123,980dd5,11/8/2014,f,18,years,Port Hospital,56,121,yes,no,yes,no,yes,38.4,38.2487535,East I,SL040203,East I,TRUE,11/10/2014,8.484381991,-13.21482692,yes
+124,7938aa,10/3/2014,f,22,years,Military Hospital,61,163,yes,no,yes,no,yes,38.7,22.95908766,Central I,SL040201,Central I,TRUE,10/5/2014,8.481704871,-13.22860888,yes
+125,dd9d20,7/15/2014,m,18,years,,62,129,yes,no,yes,no,yes,38.9,37.25737636,East I,SL040203,East I,TRUE,7/17/2014,8.485941303,-13.2192937,yes
+126,4a89d8,11/21/2014,f,9,years,Port Hospital,44,100,yes,no,no,no,yes,39.2,44,East II,SL040204,East II,FALSE,11/21/2014,8.477875436,-13.21650931,yes
+127,2adcc8,9/30/2014,f,1,years,Port Hospital,18,36,,,,,,37.2,138.8888889,Mountain Rural,SL040102,Mountain Rural,TRUE,10/1/2014,8.464557859,-13.21990102,yes
+128,571af3,11/13/2014,f,1,years,,18,45,no,no,no,no,yes,36.9,88.88888889,Mountain Rural,SL040102,Mountain Rural,TRUE,11/13/2014,8.462319765,-13.22057542,yes
+129,8.04E+04,,m,46,years,Other,82,210,yes,no,yes,no,no,38.7,18.59410431,Mountain Rural,SL040102,Mountain Rural,TRUE,10/30/2014,,,yes
+130,b54b56,10/22/2014,f,7,years,Port Hospital,34,88,yes,no,yes,no,no,39.3,43.90495868,West III,SL040208,West III,TRUE,10/23/2014,8.460922221,-13.26898606,yes
+131,b8c40d,9/21/2014,m,16,years,,66,160,yes,no,yes,no,yes,38.5,25.78125,West III,SL040208,West III,FALSE,9/23/2014,8.484331455,-13.26269151,yes
+132,37812a,10/21/2014,m,17,years,Port Hospital,60,158,no,no,yes,no,yes,36,24.03460984,East I,SL040203,East I,TRUE,10/24/2014,8.489789163,-13.21677089,yes
+133,d4d8c4,9/26/2014,m,45,years,,79,199,yes,yes,yes,no,no,39.2,19.94899119,Mountain Rural,SL040102,Mountain Rural,TRUE,9/27/2014,8.452634676,-13.20979108,yes
+134,ba66a6,10/1/2014,m,18,years,Military Hospital,70,162,no,no,yes,no,no,36.7,26.6727633,Mountain Rural,SL040102,Mountain Rural,TRUE,10/1/2014,8.461406656,-13.21515992,yes
+135,b9170e,10/7/2014,m,5,years,,53,90,yes,no,no,no,no,39.2,65.43209877,West II,SL040207,Central II,TRUE,10/9/2014,8.468756402,-13.23796701,yes
+136,1cf6fc,7/17/2014,m,28,years,Port Hospital,73,151,no,no,yes,yes,yes,37,32.01613964,East II,SL040204,East II,FALSE,7/22/2014,8.480400122,-13.21318556,yes
+137,ac0388,11/4/2014,f,12,years,Port Hospital,48,108,yes,no,yes,no,yes,39.2,41.15226337,Central II,SL040202,Central II,TRUE,11/7/2014,8.48998637,-13.23507303,yes
+138,b5c984,8/29/2014,m,17,years,,62,155,yes,no,yes,yes,no,38.7,25.80645161,West III,SL040208,West III,TRUE,8/31/2014,8.459610805,-13.25527036,yes
+139,474608,9/30/2014,f,5,years,Central Hospital,43,66,yes,no,yes,no,yes,39.3,98.7144169,Mountain Rural,SL040102,Mountain Rural,TRUE,10/3/2014,8.451271953,-13.21538738,yes
+140,7e1591,10/30/2014,m,23,years,,61,168,yes,no,no,no,yes,38.9,21.61281179,East II,SL040204,East II,TRUE,10/30/2014,8.48361732,-13.21841006,yes
+141,b2cd24,10/3/2014,m,21,,Other,61,126,yes,no,yes,no,yes,39.4,38.42277652,,,Central II,FALSE,10/11/2014,8.484894257,-13.25609096,yes
+142,5e95bb,9/15/2014,m,31,years,Military Hospital,60,181,yes,no,yes,no,yes,39.5,18.31445927,East II,SL040204,East II,TRUE,9/19/2014,8.477265706,-13.210835,yes
+143,218b20,11/26/2014,m,20,years,Port Hospital,60,165,yes,no,yes,no,yes,39.3,22.03856749,East II,SL040204,East II,TRUE,11/29/2014,8.484277689,-13.2158221,yes
+144,59eb95,10/25/2014,Unknown,,years,Port Hospital,61,120,yes,no,yes,no,yes,39.4,42.36111111,West III,SL040208,West III,TRUE,10/25/2014,8.460539839,-13.26566774,yes
+145,2b8fed,9/19/2014,m,47,years,Port Hospital,75,209,yes,no,yes,no,yes,38.5,17.16993659,East I,SL040203,East I,TRUE,9/20/2014,8.486201145,-13.22104981,yes
+146,38893c,10/18/2014,m,38,years,Port Hospital,67,192,yes,no,yes,no,yes,38.9,18.17491319,West III,SL040208,West III,FALSE,10/20/2014,8.477118998,-13.26851521,yes
+147,c80572,10/24/2014,m,32,years,,74,178,yes,no,yes,yes,no,38.8,23.35563691,West II,SL040207,West II,TRUE,10/24/2014,8.469832192,-13.23701043,yes
+148,dc6f96,10/6/2014,f,6,years,Port Hospital,25,77,yes,no,yes,no,yes,39.9,42.16562658,Mountain Rural,SL040102,Mountain Rural,TRUE,10/7/2014,8.460298979,-13.21848135,yes
+149,ad3141,8/11/2014,m,1,years,Port Hospital,19,46,yes,yes,no,no,no,39.1,89.79206049,West II,SL040207,West II,TRUE,8/15/2014,8.471132951,-13.23667406,yes
+150,157310,10/5/2014,m,13,years,,57,155,yes,no,yes,no,no,39.2,23.72528616,Mountain Rural,SL040102,Mountain Rural,TRUE,10/7/2014,8.462981276,-13.21560666,yes
+151,e55ec4,10/24/2014,m,1,years,,17,53,yes,yes,yes,no,yes,38.9,60.51975792,West III,SL040208,West III,FALSE,10/25/2014,8.453411369,-13.2608352,yes
+152,5154ca,9/8/2014,f,1,years,Military Hospital,21,34,yes,yes,yes,no,no,39.5,181.6608997,Central I,SL040201,Central I,TRUE,9/11/2014,8.481048966,-13.23058602,yes
+153,63c0ce,10/2/2014,f,9,years,Port Hospital,36,114,yes,no,yes,yes,no,38.8,27.70083102,Mountain Rural,SL040102,Mountain Rural,TRUE,10/6/2014,8.462573825,-13.20972063,yes
+154,7ee3ea,7/15/2014,f,6,years,Port Hospital,37,81,yes,no,yes,no,no,39.8,56.3938424,Central II,SL040202,Central II,TRUE,7/18/2014,8.486100825,-13.23969117,yes
+155,0b5ad0,9/28/2014,m,28,years,,65,170,yes,yes,yes,no,yes,39.1,22.49134948,Mountain Rural,SL040102,Mountain Rural,TRUE,10/3/2014,8.478281668,-13.22222336,yes
+156,4635f5,,f,3,years,St. Mark's Maternity Hospital (SMMH),26,43,yes,no,yes,no,no,39,140.6165495,East II,SL040204,East II,FALSE,10/10/2014,8.486973196,-13.22489134,yes
+157,8f5a90,10/5/2014,f,16,years,Port Hospital,56,126,yes,no,yes,no,yes,39.1,35.27336861,Mountain Rural,SL040102,Mountain Rural,TRUE,10/6/2014,8.465847544,-13.21073582,yes
+158,36391a,9/18/2014,m,32,years,,78,209,yes,no,no,no,yes,38,17.85673405,West III,SL040208,West III,TRUE,9/19/2014,8.475499365,-13.26314093,yes
+159,4c68e7,10/18/2014,m,1,years,,14,50,yes,yes,no,no,yes,39.5,56,Mountain Rural,SL040102,Mountain Rural,TRUE,10/20/2014,8.47132339,-13.21965478,yes
+160,dd977e,9/23/2014,f,0,years,Port Hospital,-5,15,yes,yes,yes,yes,yes,39.5,-222.2222222,West II,SL040207,West II,TRUE,9/25/2014,8.461192004,-13.23441284,yes
+161,b8bd29,10/9/2014,m,2,years,St. Mark's Maternity Hospital (SMMH),40,39,yes,no,yes,no,no,39.1,262.9848784,Central I,SL040201,Central II,FALSE,10/11/2014,8.477374418,-13.22886298,yes
+162,fc57cc,9/11/2014,f,11,years,Other,46,117,yes,yes,yes,yes,yes,38.6,33.60362335,East II,SL040204,East II,TRUE,9/13/2014,8.484196941,-13.22466542,yes
+163,ec465b,9/27/2014,m,44,years,St. Mark's Maternity Hospital (SMMH),64,194,yes,yes,yes,no,yes,38.1,17.00499522,Mountain Rural,SL040102,Mountain Rural,TRUE,9/28/2014,8.45209953,-13.21603724,yes
+164,f02cb8,9/29/2014,m,20,years,,63,146,no,no,yes,no,yes,36.4,29.55526365,Mountain Rural,SL040102,Mountain Rural,TRUE,9/29/2014,8.453963553,-13.21290195,yes
+165,d9fce7,7/1/2014,m,9,years,Other,48,134,yes,no,no,yes,no,39.5,26.73201158,Mountain Rural,SL040102,Mountain Rural,TRUE,7/5/2014,8.451345658,-13.24273113,yes
+166,8e6587,,m,39,years,Port Hospital,74,164,yes,no,no,no,yes,38.4,27.51338489,Mountain Rural,SL040102,Mountain Rural,FALSE,11/13/2014,8.468169945,-13.21145882,yes
+167,26b551,9/18/2014,f,41,years,,82,225,yes,yes,yes,yes,yes,38.7,16.19753086,Mountain Rural,SL040102,Mountain Rural,TRUE,9/20/2014,8.464954841,-13.21908345,yes
+168,aee2e3,9/12/2014,f,13,years,Port Hospital,50,125,yes,no,yes,no,no,39.3,32,East II,SL040204,East II,TRUE,9/15/2014,8.479839483,-13.21060001,yes
+169,f62965,8/31/2014,f,3,years,,42,47,yes,no,yes,no,yes,39.3,190.1312811,Mountain Rural,SL040102,Mountain Rural,TRUE,9/3/2014,8.470129382,-13.21700544,yes
+170,8f0055,8/30/2014,m,26,years,Port Hospital,67,146,yes,no,yes,no,no,38.7,31.43178833,East II,SL040204,East II,TRUE,9/2/2014,8.48299893,-13.22134207,yes
+171,c03424,7/31/2014,f,20,years,Military Hospital,70,157,yes,no,no,no,no,39.3,28.398718,East II,SL040204,East II,FALSE,8/5/2014,8.47916549,-13.21090296,yes
+172,f61980,8/24/2014,f,3,years,Port Hospital,28,54,yes,no,yes,yes,yes,40.1,96.02194787,East II,SL040204,East II,TRUE,8/25/2014,8.483005085,-13.21819383,yes
+173,1a0bf0,,m,42,years,,88,182,yes,no,yes,no,yes,39.4,26.56683975,West III,SL040208,West III,TRUE,10/12/2014,8.457270021,-13.25210387,yes
+174,818a86,10/15/2014,f,21,years,Other,57,122,yes,no,yes,no,no,40.2,38.29615695,East II,SL040204,East II,TRUE,10/16/2014,8.484230835,-13.22192839,yes
+175,439526,9/26/2014,f,5,years,Port Hospital,49,81,yes,no,yes,no,no,39.8,74.68373724,Mountain Rural,SL040102,Mountain Rural,TRUE,9/27/2014,8.459656408,-13.21074656,yes
+176,a32a1b,9/27/2014,f,3,years,,33,52,yes,no,yes,no,yes,39.1,122.0414201,West III,SL040208,West III,FALSE,10/2/2014,8.452811953,-13.26024534,yes
+177,eabb2a,7/4/2014,f,3,years,Port Hospital,24,50,yes,no,yes,no,no,39.1,96,West III,SL040208,West III,TRUE,7/9/2014,8.456917761,-13.2612265,yes
+178,c9783b,9/8/2014,f,2,years,Other,19,26,no,no,yes,no,yes,36.6,281.0650888,West I,SL040206,West I,TRUE,9/11/2014,8.483678807,-13.24652591,yes
+179,f6c560,10/11/2014,f,6,years,Other,30,80,yes,no,yes,no,yes,38.7,46.875,Mountain Rural,SL040102,Mountain Rural,TRUE,10/13/2014,8.455338299,-13.21433515,yes
+180,77a257,11/23/2014,Unknown,9,years,Port Hospital,42,99,yes,no,yes,no,yes,38.5,42.85277013,West III,SL040208,West III,TRUE,11/23/2014,8.455143548,-13.25906211,yes
+181,bec959,8/22/2014,f,10,years,Port Hospital,40,102,yes,no,yes,no,no,38.8,38.44675125,,SL040202,Central II,FALSE,8/30/2014,8.488738415,-13.238107,no
+182,15de43,9/20/2014,m,57,years,Port Hospital,93,226,yes,no,yes,no,no,39.5,18.20816039,West II,SL040207,West II,TRUE,9/20/2014,8.468091703,-13.24942191,yes
+183,5afc68,,f,7,years,Other,31,92,yes,no,yes,no,no,39.4,36.62570888,West III,SL040208,West III,TRUE,10/12/2014,8.479522033,-13.2646264,yes
+184,ade678,9/3/2014,m,36,years,,81,189,yes,no,yes,yes,no,39,22.67573696,West II,SL040207,West II,TRUE,9/7/2014,8.461436951,-13.23435992,yes
+185,2aa439,10/25/2014,m,39,years,Port Hospital,75,176,yes,no,yes,no,yes,39,24.21229339,West II,SL040207,West II,TRUE,10/26/2014,8.463106195,-13.2249439,yes
+186,6c6bc5,11/8/2014,m,50,years,Port Hospital,88,202,no,no,yes,no,no,35.9,21.56651309,East III,SL040205,East III,FALSE,11/9/2014,8.464066816,-13.2084803,yes
+187,0afd15,8/27/2014,m,17,years,Central Hospital,60,165,yes,no,yes,no,yes,39.1,22.03856749,Central I,SL040201,Central I,TRUE,8/28/2014,8.477617727,-13.23469836,yes
+188,fc4476,10/27/2014,f,13,years,Port Hospital,51,109,yes,no,yes,no,yes,39.2,42.92567966,Mountain Rural,SL040102,Mountain Rural,TRUE,10/28/2014,8.461432453,-13.216105,yes
+189,c6b046,11/22/2014,m,21,years,Military Hospital,70,167,yes,no,yes,no,no,39,25.0995016,Mountain Rural,SL040102,Mountain Rural,TRUE,11/24/2014,8.45381925,-13.21453966,yes
+190,3a4372,10/2/2014,m,34,years,Military Hospital,73,191,no,no,yes,no,no,36.9,20.01041638,Mountain Rural,SL040102,Mountain Rural,TRUE,10/2/2014,8.474494807,-13.21819095,yes
+191,fc15ef,6/16/2014,m,19,years,,68,174,no,no,yes,no,no,36.5,22.46003435,Central II,SL040202,Central II,FALSE,6/17/2014,8.477617055,-13.23851279,yes
+192,c2f748,10/28/2014,Unknown,26,years,Military Hospital,65,202,yes,no,yes,no,yes,38.8,15.9298108,Mountain Rural,SL040102,Mountain Rural,TRUE,10/29/2014,8.476052329,-13.21795215,yes
+193,745cd8,10/24/2014,m,7,years,,42,111,yes,yes,no,no,no,38.6,34.0881422,Mountain Rural,SL040102,Mountain Rural,TRUE,10/25/2014,8.451417317,-13.20928568,yes
+194,68f4a0,8/17/2014,f,22,years,Military Hospital,62,105,yes,no,yes,no,yes,39.1,56.23582766,West II,SL040207,West II,TRUE,8/24/2014,8.460872002,-13.22420245,yes
+195,db8ca7,9/22/2014,f,15,years,Port Hospital,56,115,yes,no,yes,no,no,40.1,42.34404537,West II,SL040207,West II,TRUE,9/25/2014,8.462678962,-13.2233358,yes
+196,04b083,10/10/2014,f,4,years,St. Mark's Maternity Hospital (SMMH),38,88,yes,no,yes,no,no,39.1,49.07024793,West I,SL040206,West I,FALSE,10/12/2014,8.482766759,-13.24696419,yes
+197,4e7571,9/27/2014,f,20,years,Other,60,146,yes,no,yes,no,no,38.4,28.14787014,Mountain Rural,SL040102,Mountain Rural,TRUE,9/28/2014,8.476747924,-13.21834614,yes
+198,fa8d63,8/27/2014,Unknown,24,years,,66,164,no,no,yes,no,yes,36.2,24.5389649,West II,SL040207,West II,TRUE,9/2/2014,8.468281554,-13.23465709,yes
+199,62f4f2,10/30/2014,m,16,years,Other,61,146,yes,no,yes,no,no,39,28.61700131,Mountain Rural,SL040102,Mountain Rural,TRUE,10/30/2014,8.463365002,-13.21207447,yes
+200,9df68c,8/22/2014,f,14,years,,48,150,yes,no,yes,no,yes,38.7,21.33333333,West III,SL040208,West III,TRUE,8/31/2014,8.463987446,-13.26922739,yes
+201,332efa,8/5/2014,m,1,years,Other,16,48,yes,no,yes,no,yes,39.8,69.44444444,East I,SL040203,Central II,FALSE,8/13/2014,8.487442151,-13.21599433,yes
+202,fb5b29,11/26/2014,f,1,years,Port Hospital,22,50,yes,no,yes,no,no,38.5,88,West II,SL040207,West II,TRUE,11/30/2014,8.462601435,-13.23095388,yes
+203,e38b62,10/22/2014,f,9,years,,48,118,yes,no,yes,no,yes,39.6,34.47285263,West II,SL040207,West II,TRUE,10/23/2014,8.467327587,-13.23438811,yes
+204,01dad0,10/6/2014,f,12,years,,43,111,yes,yes,yes,no,yes,38.9,34.89976463,Mountain Rural,SL040102,Mountain Rural,TRUE,10/6/2014,8.476647552,-13.2178957,yes
+205,6198a5,10/27/2014,Unknown,13,years,Port Hospital,44,117,no,yes,yes,no,no,36.2,32.14259625,East II,SL040204,East II,TRUE,10/28/2014,8.483310211,-13.21828656,yes
+206,058f21,11/1/2014,f,2,years,,28,47,,,,,,37.3,126.7541874,Central I,SL040201,Central I,FALSE,11/1/2014,8.479051732,-13.23515723,yes
+207,9cd6d0,8/6/2014,m,66,years,Port Hospital,96,259,yes,no,yes,no,no,39.4,14.31105678,East III,SL040205,East III,TRUE,8/7/2014,8.469750254,-13.21112769,yes
+208,0d8d9b,9/4/2014,f,4,years,Military Hospital,33,72,yes,no,yes,no,no,39.5,63.65740741,Mountain Rural,SL040102,Mountain Rural,TRUE,9/9/2014,8.46033231,-13.22159845,yes
+209,620662,11/24/2014,m,34,years,Other,70,219,no,yes,yes,no,yes,37.1,14.59519193,Central I,SL040201,Central I,TRUE,11/25/2014,8.472054203,-13.22957742,yes
+210,2a16aa,11/1/2014,f,25,years,Other,56,170,yes,no,yes,no,yes,39.6,19.37716263,West II,SL040207,West II,TRUE,11/2/2014,8.469650262,-13.24702788,yes
+211,151773,8/31/2014,f,12,,,54,138,yes,no,yes,no,no,38.1,28.35538752,West III,SL040208,West III,FALSE,9/7/2014,8.460510612,-13.26699886,yes
+212,789fa5,11/27/2014,m,28,years,Port Hospital,65,171,no,no,yes,no,no,36.2,22.22906193,Central I,SL040201,Central I,TRUE,11/30/2014,8.479821066,-13.23255147,yes
+213,5c27ca,9/22/2014,f,2,years,,21,39,yes,no,yes,no,no,39.1,138.0670611,West III,SL040208,West III,TRUE,9/24/2014,8.484846588,-13.26331781,yes
+214,af3fea,11/6/2014,m,5,years,St. Mark's Maternity Hospital (SMMH),44,89,yes,no,no,no,yes,39.8,55.54854185,Mountain Rural,SL040102,Mountain Rural,TRUE,11/9/2014,8.451097554,-13.24084553,yes
+215,0f70b1,11/5/2014,f,27,years,,61,176,yes,no,no,no,no,39.7,19.69266529,West II,SL040207,West II,TRUE,11/6/2014,8.459933598,-13.23492775,yes
+216,0b2579,9/10/2014,f,10,years,Other,32,93,yes,no,yes,no,no,39.4,36.99849694,Mountain Rural,SL040102,Central II,FALSE,9/14/2014,8.469686126,-13.21404133,yes
+217,cd7bff,11/2/2014,m,4,years,Military Hospital,47,81,yes,yes,yes,no,no,38.7,71.63542143,West II,SL040207,West II,TRUE,11/5/2014,8.469456056,-13.23400724,yes
+218,386c3e,11/14/2014,m,7,years,,40,118,yes,no,yes,no,yes,39,28.72737719,East I,SL040203,East I,TRUE,11/15/2014,8.489459078,-13.21452421,yes
+219,ca5f7a,10/15/2014,m,40,years,Central Hospital,75,224,no,no,no,no,no,37.4,14.9473852,Mountain Rural,SL040102,Mountain Rural,TRUE,10/18/2014,8.479737838,-13.22328567,yes
+220,26028b,11/25/2014,m,8,years,,46,101,yes,yes,yes,no,yes,39.3,45.09361827,West II,SL040207,West II,TRUE,11/25/2014,8.464668545,-13.24508864,yes
+221,d59299,9/21/2014,f,15,years,,52,142,yes,no,yes,no,yes,38.4,25.78853402,West II,SL040207,Central II,FALSE,9/26/2014,8.466351589,-13.24575163,yes
+222,0e4462,11/23/2014,f,12,years,Other,45,124,yes,no,yes,no,no,40.7,29.26638918,Mountain Rural,SL040102,Mountain Rural,TRUE,11/27/2014,8.451906631,-13.24197606,yes
+223,0bafac,9/24/2014,m,3,years,,42,64,yes,no,yes,no,no,38.5,102.5390625,Mountain Rural,SL040102,Mountain Rural,TRUE,9/25/2014,8.450151159,-13.2181044,yes
+224,dcdccb,10/12/2014,f,35,years,Port Hospital,72,183,yes,no,no,no,no,38.6,21.49959688,East II,SL040204,East II,TRUE,10/14/2014,8.480731031,-13.22086178,yes
+225,fb2536,7/29/2014,f,7,years,,46,94,yes,no,yes,no,yes,39.5,52.05975555,West III,SL040208,West III,TRUE,8/5/2014,8.454180023,-13.25928739,yes
+226,9c5424,11/7/2014,m,1,years,Central Hospital,17,50,yes,no,yes,no,yes,38.8,68,West II,SL040207,West II,FALSE,11/10/2014,8.467321196,-13.24463679,yes
+227,cb7ca3,,m,14,years,Mitilary Hospital,58,160,yes,no,yes,no,no,38.1,22.65625,East II,SL040204,East II,TRUE,9/3/2014,8.478645868,-13.2158046,yes
+228,765861,9/16/2014,f,17,years,,55,157,yes,no,no,no,yes,38.7,22.31327843,Central II,SL040202,Central II,TRUE,9/19/2014,8.486317412,-13.23784299,yes
+229,b30365,10/4/2014,f,9,years,Port Hopital,39,113,yes,no,yes,no,no,38.5,30.54272065,East III,SL040205,East III,TRUE,10/4/2014,8.464446969,-13.20755239,yes
+230,8a06eb,10/13/2014,f,23,years,Other,50,117,no,no,no,no,no,37.3,36.52567755,Mountain Rural,SL040102,Mountain Rural,TRUE,10/14/2014,8.4514535,-13.2192914,yes
+231,2fc2f1,10/6/2014,m,11,years,Other,66,138,yes,no,yes,no,yes,38.1,34.65658475,East II,SL040204,East II,FALSE,10/7/2014,8.484259769,-13.2192652,yes
+232,3f5fe1,8/22/2014,f,27,years,St. Mark's Maternity Hospital (SMMH),66,125,yes,no,no,no,no,39.1,42.24,West III,SL040208,West III,TRUE,8/24/2014,8.459285338,-13.2551559,yes
+233,c9eb1f,10/14/2014,f,1,years,Port Hospital,7,35,yes,no,yes,no,yes,39.5,57.14285714,West III,SL040208,West III,TRUE,10/14/2014,8.459238924,-13.26719008,yes
+234,102152,11/6/2014,m,9,years,Port Hospital,51,122,yes,no,yes,no,yes,39.1,34.26498253,Mountain Rural,SL040102,Mountain Rural,TRUE,11/8/2014,8.45279678,-13.21672643,yes
+235,08c2f2,9/18/2014,m,5,years,,47,72,yes,no,yes,no,no,38.3,90.66358025,Mountain Rural,SL040102,Mountain Rural,TRUE,9/20/2014,8.481057461,-13.2233366,yes
+236,3b0741,11/24/2014,m,9,years,St. Mark's Maternity Hospital (SMMH),56,125,yes,no,yes,no,yes,38.6,35.84,West III,SL040208,West III,FALSE,11/24/2014,8.483218959,-13.26344569,yes
+237,c38a20,10/10/2014,f,0,years,,5,17,yes,no,no,no,yes,39.2,173.0103806,East II,SL040204,East II,TRUE,10/14/2014,8.48482688,-13.22419099,yes
+238,c1978f,10/12/2014,f,11,years,Other,49,112,,,,,,36.8,39.0625,West II,SL040207,West II,TRUE,10/14/2014,8.468040038,-13.24750055,yes
+239,e898d4,11/6/2014,f,21,years,Military Hospital,56,151,yes,yes,yes,no,yes,39.1,24.5603263,East II,SL040204,East II,TRUE,11/7/2014,8.484796748,-13.22498964,yes
+240,7a1964,9/27/2014,f,11,years,Central Hospital,45,124,yes,no,yes,no,no,39.5,29.26638918,West II,SL040207,West II,TRUE,10/2/2014,8.46122389,-13.23319977,yes
+241,6.20E+39,10/12/2014,f,7,years,Military Hospital,29,100,no,no,yes,no,no,37.1,29,,SL040204,Central II,FALSE,10/12/2014,,,no
+242,25f3d9,9/16/2014,m,35,years,Military Hospital,78,193,yes,no,yes,no,no,39.3,20.94015947,West III,SL040208,West III,TRUE,9/17/2014,8.459778613,-13.25585755,yes
+243,1e1825,7/29/2014,f,15,years,Port Hospital,47,105,yes,yes,yes,no,no,38.9,42.63038549,Mountain Rural,SL040102,Mountain Rural,TRUE,7/31/2014,8.455708038,-13.20838054,yes
+244,ad6cac,10/11/2014,f,8,years,,47,83,yes,no,yes,no,no,38.3,68.22470605,West III,SL040208,West III,TRUE,10/13/2014,8.455013665,-13.26368502,yes
+245,d07e11,11/3/2014,m,24,years,Port Hospital,71,157,yes,no,no,no,yes,39.1,28.80441397,West II,SL040207,West II,TRUE,11/6/2014,8.474636934,-13.23790081,yes
+246,8f32e8,,m,10,years,St. Mark's Maternity Hospital (SMMH),59,131,no,no,yes,no,yes,37.1,34.38028087,West II,SL040207,West II,FALSE,11/10/2014,8.467495464,-13.24726386,yes
+247,3c3367,8/5/2014,f,3,years,Other,36,36,yes,no,no,no,yes,39,277.7777778,East III,SL040205,East III,TRUE,8/19/2014,8.468321957,-13.21067107,yes
+248,ed67c0,10/5/2014,f,12,years,Other,42,129,no,no,yes,yes,yes,37.7,25.23886786,Mountain Rural,SL040102,Mountain Rural,TRUE,10/6/2014,8.470513166,-13.2153445,yes
+249,7180ae,10/21/2014,m,3,years,Port Hospital,32,64,yes,yes,yes,no,no,39,78.125,West III,SL040208,West III,TRUE,10/21/2014,8.482223943,-13.26579855,yes
+250,128d10,9/13/2014,m,7,years,Port Hospital,52,107,yes,yes,yes,no,no,38.9,45.41881387,West I,SL040206,West I,TRUE,9/19/2014,8.483185751,-13.24813111,yes
+251,2be2fa,8/22/2014,m,15,years,Port Hospital,62,141,yes,no,yes,yes,no,39.2,31.18555405,West III,SL040208,West III,FALSE,8/25/2014,8.463342533,-13.26204597,yes
+252,61fcce,8/31/2014,f,8,years,St. Mark's Maternity Hospital (SMMH),34,93,yes,no,yes,no,no,38.8,39.31090299,Mountain Rural,SL040102,Mountain Rural,TRUE,9/1/2014,8.450360666,-13.21850488,yes
+253,64b7b0,9/11/2014,m,39,years,,72,176,no,no,yes,yes,no,36.7,23.24380165,West III,SL040208,West III,TRUE,9/11/2014,8.478093408,-13.27062029,yes
+254,6f8a3e,10/29/2014,f,2,years,Port Hospital,23,56,no,no,yes,no,yes,36.6,73.34183673,Mountain Rural,SL040102,Mountain Rural,TRUE,10/29/2014,8.464181577,-13.22138197,yes
+255,a93d55,,m,4,years,Central Hospital,43,80,yes,no,yes,no,yes,38.9,67.1875,Mountain Rural,SL040102,Mountain Rural,TRUE,10/24/2014,8.462538088,-13.21824791,yes
+256,c4e706,5/23/2014,m,48,years,,84,205,yes,no,yes,yes,no,39.4,19.98810232,East I,SL040203,East I,FALSE,5/24/2014,8.489320726,-13.21433942,yes
+257,2f29c3,9/16/2014,f,51,years,Military Hospital,87,234,no,yes,yes,no,yes,37.3,15.88866973,West II,SL040207,West II,TRUE,9/17/2014,8.468175086,-13.23262913,yes
+258,fa9e25,11/1/2014,m,22,years,Port Hospital,64,161,yes,no,yes,no,no,39.9,24.69040546,Mountain Rural,SL040102,Mountain Rural,TRUE,11/5/2014,8.45985334,-13.21051878,yes
+259,88632e,8/18/2014,m,22,years,,64,154,yes,no,yes,yes,yes,39,26.98600101,West III,SL040208,West III,TRUE,8/20/2014,8.460641617,-13.25421813,yes
+260,3efdc1,8/24/2014,f,7,years,,35,100,yes,no,yes,no,yes,39.3,35,Mountain Rural,SL040102,Mountain Rural,TRUE,9/3/2014,8.452993595,-13.24208568,yes
+261,ab27c7,8/27/2014,m,17,years,Port Hospital,66,132,yes,no,yes,no,yes,39,37.87878788,West III,SL040208,Central II,FALSE,8/27/2014,8.455222491,-13.25968901,yes
+262,ff9ddd,9/5/2014,f,4,years,,48,73,yes,no,yes,no,yes,39.5,90.07318446,Mountain Rural,SL040102,Mountain Rural,TRUE,9/5/2014,8.455393318,-13.20925198,yes
+263,9c8045,8/25/2014,f,31,years,,66,204,,,,,,37.2,15.85928489,Mountain Rural,SL040102,Mountain Rural,TRUE,8/26/2014,8.47469188,-13.21955944,yes
+264,62638,7/25/2014,m,13,years,Central Hospital,61,125,no,no,yes,no,yes,37.5,39.04,West III,SL040208,West III,TRUE,7/27/2014,,,yes
+265,60813f,10/28/2014,m,27,years,,59,173,yes,no,yes,yes,no,39.7,19.71332153,East II,SL040204,East II,TRUE,10/28/2014,8.484850351,-13.227029,yes
+266,19db82,10/16/2014,Unknown,16,years,,46,76,yes,no,yes,no,yes,38.3,79.6398892,Mountain Rural,SL040102,Mountain Rural,FALSE,10/16/2014,8.449712469,-13.21175088,yes
+267,1b806b,11/22/2014,f,3,years,Port Hospital,42,44,yes,yes,yes,no,yes,38.8,216.9421488,Mountain Rural,SL040102,Mountain Rural,TRUE,11/24/2014,8.478026407,-13.22010838,yes
+268,0e7ec8,9/10/2014,f,5,years,Military Hospital,43,81,yes,yes,yes,no,yes,39.4,65.53878982,East I,SL040203,East I,TRUE,9/10/2014,8.485240041,-13.21762557,yes
+269,d60bc8,10/20/2014,m,20,years,Central Hospital,59,147,yes,yes,yes,no,yes,39.1,27.30343838,Mountain Rural,SL040102,Mountain Rural,TRUE,10/21/2014,8.449295628,-13.21694328,yes
+270,9d70c3,,m,4,years,Port Hospital,38,74,yes,yes,yes,no,no,39.2,69.39371804,East III,SL040205,East III,TRUE,8/25/2014,8.468116998,-13.21037785,yes
+271,2dea67,11/19/2014,f,5,years,Port Hospital,46,70,yes,no,yes,no,no,38.9,93.87755102,West III,SL040208,West III,FALSE,11/21/2014,8.48058932,-13.2633599,yes
+272,d42571,11/14/2014,f,20,years,St. Mark's Maternity Hospital (SMMH),56,138,yes,yes,yes,no,no,38.8,29.40558706,West I,SL040206,West I,TRUE,11/15/2014,8.479045533,-13.24735639,yes
+273,df37cf,10/4/2014,m,25,years,Port Hospital,69,169,yes,no,yes,no,yes,38.6,24.15881797,Mountain Rural,SL040102,Mountain Rural,TRUE,10/7/2014,8.463122789,-13.22014432,yes
+274,f044b4,9/27/2014,f,28,years,Port Hospital,68,170,yes,no,yes,no,no,39,23.52941176,Mountain Rural,SL040102,Mountain Rural,TRUE,10/3/2014,8.478836662,-13.22131276,yes
+275,00612b,9/28/2014,m,7,years,,45,109,,,,,,37.6,37.8755997,Mountain Rural,SL040102,Mountain Rural,TRUE,9/29/2014,8.461551491,-13.2164005,yes
+276,73647d,11/16/2014,Unknown,,years,Port Hospital,32,95,yes,no,yes,no,no,39.2,35.45706371,West II,SL040207,West II,FALSE,11/18/2014,8.472254001,-13.23600293,yes
+277,3f7c0b,8/28/2014,f,4,years,Military Hospital,39,75,no,no,yes,no,no,36.8,69.33333333,Mountain Rural,SL040102,Mountain Rural,TRUE,9/2/2014,8.458717601,-13.21157704,yes
+278,e067e0,9/16/2014,m,29,years,Port Hospital,71,173,yes,no,yes,no,yes,38.7,23.72281065,West II,SL040207,West II,TRUE,9/22/2014,8.463232261,-13.2369097,yes
+279,7c5c70,10/30/2014,m,1,years,St. Mark's Maternity Hospital (SMMH),16,47,yes,no,yes,no,no,39.3,72.43096424,Mountain Rural,SL040102,Mountain Rural,TRUE,10/31/2014,8.471373156,-13.21778818,yes
+280,ded352,7/25/2014,f,27,years,Port Hospital,71,140,yes,no,yes,no,yes,39.8,36.2244898,West III,SL040208,West III,TRUE,7/30/2014,8.449958749,-13.2670022,yes
+281,c10e49,9/14/2014,m,22,,,72,150,yes,no,yes,no,no,38.6,32,West II,SL040207,Central II,FALSE,9/15/2014,8.460268404,-13.22434219,yes
+282,6c1185,9/27/2014,f,29,years,,66,152,,,,,,36.5,28.56648199,West II,SL040207,West II,TRUE,9/29/2014,8.470262146,-13.23374366,yes
+283,b016e0,8/14/2014,m,45,years,Central Hospital,97,217,yes,no,yes,no,no,38.4,20.5992907,West II,SL040207,West II,TRUE,8/18/2014,8.481836804,-13.25709877,yes
+284,7339c0,11/5/2014,m,31,years,Military Hospital,64,134,yes,no,yes,no,no,38.8,35.64268211,East II,SL040204,East II,TRUE,11/8/2014,8.48099096,-13.21026609,yes
+285,ae4a36,7/25/2014,f,7,years,Central Hospital,32,87,yes,no,no,yes,no,38.7,42.27771172,East I,SL040203,East I,TRUE,7/30/2014,8.489182188,-13.21642434,yes
+286,3d9364,8/6/2014,f,28,years,,66,183,yes,no,no,no,no,38.9,19.70796381,East II,SL040204,East II,FALSE,8/15/2014,8.482868016,-13.21759885,yes
+287,f7118d,,m,1,years,,18,44,yes,no,yes,no,no,39.1,92.97520661,Mountain Rural,SL040102,Mountain Rural,TRUE,9/26/2014,8.46161463,-13.21611682,yes
+288,ce4ec6,,f,3,years,,34,58,yes,no,no,no,no,38.7,101.0701546,West III,SL040208,West III,TRUE,7/25/2014,8.467722809,-13.2678625,yes
+289,a8be18,10/10/2014,m,41,years,Military Hospital,80,167,yes,no,yes,no,no,38.7,28.68514468,East II,SL040204,East II,TRUE,10/11/2014,8.483104353,-13.21953312,yes
+290,8c4e8a,10/23/2014,m,5,years,Central Hospital,49,89,yes,no,no,no,yes,38,61.86087615,,,,TRUE,10/26/2014,8.488390047,-13.23918731,yes
+291,974bc1,5/9/2014,f,18,years,Military Hospital,39,117,no,no,yes,no,yes,37.7,28.49002849,West III,SL040208,West III,FALSE,5/13/2014,8.487109634,-13.26129944,yes
+292,e36e1f,9/29/2014,m,5,years,Central Hospital,54,64,yes,no,yes,no,yes,39.4,131.8359375,West II,SL040207,West II,TRUE,9/30/2014,8.468739201,-13.23860111,yes
+293,d2d95d,7/27/2014,f,26,years,Military Hospital,65,154,yes,no,yes,no,yes,39.3,27.40765728,West II,SL040207,West II,TRUE,8/3/2014,8.471601677,-13.2480535,yes
+294,f1dd78,11/4/2014,Unknown,26,years,Central Hospital,62,180,yes,no,yes,no,yes,38.8,19.13580247,West III,SL040208,West III,TRUE,11/5/2014,8.456454809,-13.25492912,yes
+295,1d1c7d,9/21/2014,m,22,years,,67,168,yes,no,yes,no,no,39.6,23.73866213,East II,SL040204,East II,TRUE,9/25/2014,8.478602925,-13.21249122,yes
+296,dce5cc,5/17/2014,f,16,years,Other,55,145,yes,yes,yes,no,no,38.8,26.15933413,East II,SL040204,East II,FALSE,5/18/2014,8.483678863,-13.22084609,yes
+297,4a215f,10/14/2014,f,17,years,Other,55,133,yes,yes,yes,no,no,38.3,31.09276952,West I,SL040206,Central II,TRUE,10/17/2014,8.478592341,-13.24868032,yes
+298,922374,10/16/2014,f,0,years,,8,30,yes,no,yes,no,no,38.4,88.88888889,West III,SL040208,West III,TRUE,10/16/2014,8.47530013,-13.26677076,yes
+299,ca492f,11/1/2014,f,7,years,Port Hospital,25,81,yes,no,yes,no,no,38.8,38.10394757,Mountain Rural,SL040102,Mountain Rural,TRUE,11/1/2014,8.46424962,-13.22181764,yes
+300,7ff746,7/23/2014,f,8,years,Military Hospital,48,113,yes,no,yes,no,yes,39.5,37.5910408,Central I,SL040201,Central I,TRUE,7/26/2014,8.472976551,-13.22329009,yes
+301,7fd086,7/11/2014,m,12,years,Port Hospital,63,153,yes,no,yes,no,yes,39.2,26.91272587,,SL040207,Central II,FALSE,7/13/2014,8.468499441,-13.23530202,no
+302,baa1e5,11/9/2014,f,1,years,,17,39,no,no,yes,no,no,37.6,111.7685733,East II,SL040204,East II,TRUE,11/12/2014,8.484812863,-13.22692798,yes
+303,6e3e1b,7/29/2014,m,4,years,Port Hospital,50,72,yes,yes,yes,no,no,38.7,96.45061728,Mountain Rural,SL040102,Mountain Rural,TRUE,8/10/2014,8.450391386,-13.21523133,yes
+304,d6c884,11/18/2014,f,21,years,Other,58,156,no,no,yes,no,yes,36.4,23.8330046,West III,SL040208,West III,TRUE,11/20/2014,8.457407189,-13.25535296,yes
+305,2ce30f,10/13/2014,m,0,years,Port Hospital,13,22,yes,no,yes,no,yes,39.2,268.5950413,Mountain Rural,SL040102,Mountain Rural,TRUE,10/13/2014,8.460693946,-13.22192531,yes
+306,5c796b,9/29/2014,f,7,years,Other,31,126,yes,no,yes,no,no,39.6,19.52632905,Mountain Rural,SL040102,Mountain Rural,FALSE,10/3/2014,8.463256904,-13.22211975,yes
+307,5715b7,9/25/2014,f,8,years,Military Hospital,39,97,yes,yes,yes,no,no,38.8,41.44967584,West III,SL040208,West III,TRUE,9/25/2014,8.463526449,-13.26156241,yes
+308,1.34E+90,10/9/2014,m,4,years,Military Hospital,38,68,,,,,,36.4,82.1799308,Mountain Rural,SL040102,Mountain Rural,TRUE,10/9/2014,,,yes
+309,215cee,9/7/2014,m,32,years,Port Hospital,65,189,no,no,yes,no,no,37.3,18.19657904,West II,SL040207,West II,TRUE,9/10/2014,8.472909971,-13.25243436,yes
+310,bc2924,10/20/2014,m,1,years,Port Hospital,18,52,yes,no,yes,no,yes,38.4,66.56804734,Mountain Rural,SL040102,Mountain Rural,TRUE,10/22/2014,8.469427264,-13.21250891,yes
+311,88f8aa,8/31/2014,f,9,years,St. Mark's Maternity Hospital (SMMH),33,115,yes,no,yes,no,yes,38.8,24.95274102,Central I,SL040201,Central I,FALSE,9/3/2014,8.47474134,-13.22547444,yes
+312,8a4b27,10/31/2014,m,2,years,Other,28,62,yes,yes,yes,no,yes,38.3,72.84079084,Central II,SL040202,Central II,TRUE,11/1/2014,8.487511657,-13.23866717,yes
+313,1cf7a4,9/21/2014,m,8,years,Military Hospital,51,109,yes,no,yes,no,yes,38.8,42.92567966,East III,SL040205,East III,TRUE,9/27/2014,8.464462039,-13.20613485,yes
+314,f51a50,,f,33,years,,67,176,yes,yes,no,no,no,39.5,21.62964876,West II,SL040207,West II,TRUE,8/26/2014,8.471016633,-13.23541335,yes
+315,c2a1ce,,f,8,years,Other,38,105,yes,no,yes,no,yes,39.1,34.46712018,Mountain Rural,SL040102,Mountain Rural,TRUE,9/30/2014,8.466550786,-13.21129505,yes
+316,ba831c,10/22/2014,f,0,years,Port Hospital,-5,18,yes,no,yes,no,yes,39.1,-154.3209877,East III,SL040205,East III,FALSE,10/25/2014,8.477547228,-13.20700602,yes
+317,72fdfe,11/27/2014,f,9,years,,41,100,yes,no,yes,no,yes,39.4,41,West III,SL040208,West III,TRUE,11/27/2014,8.463348376,-13.26336411,yes
+318,e25651,9/19/2014,f,10,years,Other,36,107,yes,yes,yes,no,yes,39.3,31.44379422,Central II,SL040202,Central II,TRUE,9/20/2014,8.488575959,-13.23406425,yes
+319,6ebfe0,11/20/2014,f,14,years,Other,65,143,yes,no,yes,no,yes,38.8,31.78639542,East I,SL040203,East I,TRUE,11/21/2014,8.486931873,-13.21553862,yes
+320,aa3701,9/28/2014,f,3,years,Military Hospital,34,51,yes,no,yes,yes,no,39.2,130.7189542,Mountain Rural,SL040102,Mountain Rural,TRUE,9/29/2014,8.462002296,-13.21784031,yes
+321,09f73e,9/16/2014,m,11,years,Port Hospital,60,134,yes,no,yes,no,yes,38.5,33.41501448,West II,SL040207,Central II,FALSE,9/18/2014,8.461244762,-13.23641058,yes
+322,bc0b51,9/14/2014,f,11,years,St. Mark's Maternity Hospital (SMMH),41,113,yes,no,yes,no,no,38.8,32.10901402,Mountain Rural,SL040102,Mountain Rural,TRUE,9/15/2014,8.476731295,-13.21726319,yes
+323,4288fd,9/13/2014,f,16,years,Other,60,109,yes,no,yes,no,no,39.3,50.5007996,West III,SL040208,West III,TRUE,9/13/2014,8.467531267,-13.2646704,yes
+324,0563d7,10/11/2014,f,1,years,Central Hospital,27,34,yes,no,yes,no,no,38.7,233.5640138,Mountain Rural,SL040102,Mountain Rural,TRUE,10/11/2014,8.464091133,-13.2158316,yes
+325,26c588,7/16/2014,m,2,years,Port Hospital,39,63,yes,yes,yes,no,no,39.3,98.26152683,Mountain Rural,SL040102,Mountain Rural,TRUE,7/20/2014,8.464947667,-13.22222707,yes
+326,da8bdb,11/14/2014,f,12,years,Central Hospital,51,140,yes,yes,yes,no,yes,38.7,26.02040816,Mountain Rural,SL040102,Mountain Rural,FALSE,11/16/2014,8.450843033,-13.24154526,yes
+327,623061,11/2/2014,f,22,years,Port Hospital,63,170,yes,no,yes,no,yes,39.2,21.79930796,East II,SL040204,East II,TRUE,11/3/2014,8.48035021,-13.21972744,yes
+328,9f9fd5,8/20/2014,m,3,years,Port Hospital,44,66,yes,no,yes,no,yes,38.9,101.010101,Mountain Rural,SL040102,Mountain Rural,TRUE,8/23/2014,8.451101125,-13.21108133,yes
+329,bdfe4b,9/19/2014,f,22,years,,56,112,yes,no,yes,no,yes,40.2,44.64285714,West III,SL040208,West III,TRUE,9/22/2014,8.451473419,-13.26874926,yes
+330,5024af,11/14/2014,f,5,years,,56,63,yes,no,no,no,no,39.9,141.0934744,East II,SL040204,East II,TRUE,11/15/2014,8.486177146,-13.22588513,yes
+331,9b2b8f,,m,11,years,Other,60,145,no,no,yes,no,yes,36.9,28.53745541,Mountain Rural,SL040102,Mountain Rural,FALSE,10/14/2014,8.464413583,-13.21277319,yes
+332,0bdf6b,10/31/2014,Unknown,,years,Other,55,161,yes,yes,yes,no,no,39.1,21.21831719,Mountain Rural,SL040102,Mountain Rural,TRUE,11/1/2014,8.468702733,-13.21436519,yes
+333,228e8b,8/21/2014,m,6,years,Port Hospital,59,104,yes,yes,yes,no,no,38.9,54.54881657,Central I,SL040201,Central I,TRUE,8/24/2014,8.470979638,-13.22359891,yes
+334,10ddce,9/23/2014,f,23,years,Other,63,172,yes,no,yes,yes,no,38.7,21.29529475,West III,SL040208,West III,TRUE,9/25/2014,8.455033346,-13.25997518,yes
+335,e09a19,11/15/2014,m,28,years,Military Hospital,56,200,no,no,yes,no,yes,36.6,14,West III,SL040208,West III,TRUE,11/16/2014,8.459797325,-13.26777326,yes
+336,b9a31a,10/23/2014,Unknown,,years,Military Hospital,68,195,yes,yes,yes,no,yes,39.3,17.88297173,West II,SL040207,West II,FALSE,10/23/2014,8.468760439,-13.24822463,yes
+337,5.34E+51,10/8/2014,m,31,years,,70,179,yes,no,yes,no,yes,38.9,21.84700852,West II,SL040207,West II,TRUE,10/8/2014,,,yes
+338,e5e4e7,11/22/2014,f,12,years,Central Hospital,53,133,yes,no,yes,no,yes,38.7,29.96212335,East II,SL040204,East II,TRUE,11/23/2014,8.482788921,-13.21500315,yes
+339,72ea9c,8/29/2014,m,12,years,Military Hospital,64,154,yes,yes,yes,no,no,38.3,26.98600101,Mountain Rural,SL040102,Mountain Rural,TRUE,9/7/2014,8.453166426,-13.21421577,yes
+340,eff241,11/21/2014,f,5,years,Port Hospital,45,81,no,no,yes,no,yes,37.4,68.58710562,Mountain Rural,SL040102,Mountain Rural,TRUE,11/22/2014,8.453740407,-13.21147674,yes
+341,44163c,9/17/2014,f,23,years,St. Mark's Maternity Hospital (SMMH),50,154,yes,yes,yes,no,no,39,21.08281329,East I,SL040203,Central II,FALSE,9/18/2014,8.485920806,-13.21957166,yes
+342,42b86c,9/30/2014,f,14,years,Port Hospital,60,141,yes,no,yes,no,yes,38.7,30.17956843,,,,TRUE,10/2/2014,8.485687006,-13.2556322,yes
+343,e81e6a,11/28/2014,m,13,years,St. Mark's Maternity Hospital (SMMH),67,146,no,no,yes,no,yes,36.8,31.43178833,West II,SL040207,West II,TRUE,11/29/2014,8.461198652,-13.22956757,yes
+344,0fb364,7/1/2014,m,35,years,Port Hospital,81,184,yes,no,yes,no,yes,38.5,23.92485822,Mountain Rural,SL040102,Mountain Rural,TRUE,7/6/2014,8.46400637,-13.22170743,yes
+345,b345c5,10/13/2014,f,1,years,Other,12,44,yes,no,yes,yes,yes,39.2,61.98347107,West II,SL040207,West II,TRUE,10/14/2014,8.469415459,-13.22861161,yes
+346,bf302f,9/8/2014,m,14,years,Central Hospital,64,156,yes,no,yes,no,yes,39,26.29848784,West II,SL040207,West II,FALSE,9/18/2014,8.470843791,-13.23556384,yes
+347,1df3c0,10/21/2014,f,4,years,Military Hospital,35,64,,,,,,37.2,85.44921875,Mountain Rural,SL040102,Mountain Rural,TRUE,10/23/2014,8.467459202,-13.21362822,yes
+348,d5d56f,9/9/2014,m,4,years,Other,47,70,yes,no,yes,no,yes,38.6,95.91836735,West II,SL040207,Central II,TRUE,9/11/2014,8.461235196,-13.2241303,yes
+349,dd44f3,9/20/2014,f,16,years,Other,59,135,yes,yes,yes,no,yes,38.4,32.37311385,West III,SL040208,West III,TRUE,9/22/2014,8.458679589,-13.26033721,yes
+350,882ab5,9/23/2014,m,27,years,Other,62,207,,,,,,37,14.46941586,Mountain Rural,SL040102,Mountain Rural,TRUE,9/24/2014,8.457969786,-13.21145553,yes
+351,e83194,10/26/2014,m,18,,Military Hospital,61,124,,,,,,37.3,39.67221644,East I,SL040203,East I,FALSE,10/28/2014,8.487413951,-13.21512348,yes
+352,050eca,10/24/2014,f,15,years,Port Hospital,51,110,yes,yes,yes,no,no,39,42.14876033,West III,SL040208,West III,TRUE,10/27/2014,8.455110479,-13.2666232,yes
+353,a9695f,10/21/2014,f,2,years,Port Hospital,30,36,yes,no,yes,no,no,38.1,231.4814815,West II,SL040207,West II,TRUE,10/22/2014,8.468473124,-13.23423296,yes
+354,10d90d,11/20/2014,m,8,years,Other,41,94,no,yes,yes,no,yes,36.4,46.40108646,Mountain Rural,SL040102,Mountain Rural,TRUE,11/21/2014,8.453113852,-13.20995769,yes
+355,a38790,10/25/2014,f,10,years,Port Hospital,45,121,,,,,,37.5,30.73560549,West II,SL040207,West II,TRUE,10/25/2014,8.460734274,-13.23547714,yes
+356,bd9f32,11/2/2014,m,10,years,,52,154,yes,no,yes,no,no,38.2,21.92612582,Mountain Rural,SL040102,Mountain Rural,FALSE,11/3/2014,8.477406277,-13.22018036,yes
+357,df052c,10/4/2014,m,8,years,,47,118,yes,no,no,yes,yes,39,33.7546682,West II,SL040207,West II,TRUE,10/5/2014,8.473587431,-13.25369679,yes
+358,23206a,9/19/2014,m,37,years,,72,186,yes,yes,yes,no,yes,38.7,20.81165453,East II,SL040204,East II,TRUE,9/23/2014,8.479250348,-13.21056606,yes
+359,7f0470,10/27/2014,f,9,years,Other,46,111,yes,yes,yes,no,no,39.2,37.33463193,West III,SL040208,West III,TRUE,10/29/2014,8.469858535,-13.27101162,yes
+360,2d0f27,9/29/2014,m,60,years,,98,246,yes,yes,no,no,yes,38.7,16.19406438,East II,SL040204,East II,TRUE,10/4/2014,8.475939485,-13.20977445,yes
+361,a64efd,10/24/2014,m,21,years,Central Hospital,57,158,yes,no,yes,no,yes,38.4,22.83287935,,SL040206,Central II,FALSE,10/26/2014,8.483670527,-13.24944674,no
+362,090d77,10/9/2014,m,9,years,,55,124,yes,no,no,no,no,38.1,35.77003122,Mountain Rural,SL040102,Mountain Rural,TRUE,10/9/2014,8.470194919,-13.21532741,yes
+363,58b968,7/20/2014,m,29,years,Port Hospital,66,161,yes,no,yes,no,yes,39.7,25.46198063,Central II,SL040202,Central II,TRUE,7/21/2014,8.487766862,-13.23896461,yes
+364,2cfb2f,8/16/2014,m,10,years,Military Hospital,57,130,yes,no,yes,no,yes,39,33.72781065,Mountain Rural,SL040102,Mountain Rural,TRUE,8/18/2014,8.461066276,-13.21982399,yes
+365,294457,8/24/2014,m,6,years,Military Hospital,45,106,yes,no,no,no,yes,38.8,40.0498398,Mountain Rural,SL040102,Mountain Rural,TRUE,8/24/2014,8.465451118,-13.21160111,yes
+366,b46a7a,10/1/2014,m,29,years,St. Mark's Maternity Hospital (SMMH),61,178,yes,no,yes,no,yes,38.9,19.25261962,West III,SL040208,West III,FALSE,10/1/2014,8.461547734,-13.26675909,yes
+367,5cbd2f,,Unknown,10,years,Other,52,98,yes,no,yes,no,no,38.3,54.14410662,Mountain Rural,SL040102,Mountain Rural,TRUE,8/21/2014,8.46901638,-13.21369509,yes
+368,9.20E+130,8/10/2014,f,12,years,Central Hospital,51,125,,,,,,36.6,32.64,West II,SL040207,West II,TRUE,8/12/2014,,,yes
+369,5c1d6e,7/26/2014,m,11,years,,55,160,yes,no,yes,no,yes,38.9,21.484375,West III,SL040208,West III,TRUE,8/8/2014,8.474755157,-13.26544234,yes
+370,5c9744,9/24/2014,f,10,years,Central Hospital,42,112,yes,no,yes,no,yes,39,33.48214286,West III,SL040208,West III,TRUE,9/24/2014,8.459999427,-13.26653743,yes
+371,4221c9,8/5/2014,m,16,years,,69,156,yes,no,yes,no,yes,39.6,28.3530572,East I,SL040203,East I,FALSE,8/9/2014,8.487627766,-13.21607855,yes
+372,05d68d,10/5/2014,f,42,years,,83,219,no,no,yes,no,no,37.2,17.30572757,East II,SL040204,East II,TRUE,10/5/2014,8.483405172,-13.21330066,yes
+373,cc30ed,10/25/2014,f,9,years,,47,104,,,,,,36.8,43.45414201,West III,SL040208,West III,TRUE,10/26/2014,8.454491308,-13.26583448,yes
+374,8bd455,8/30/2014,m,10,years,Other,60,135,yes,no,yes,no,no,39,32.9218107,West III,SL040208,West III,TRUE,9/2/2014,8.463693278,-13.26239684,yes
+375,da76ad,11/16/2014,Unknown,5,years,St. Mark's Maternity Hospital (SMMH),38,81,yes,no,yes,no,yes,39,57.9180003,Mountain Rural,SL040102,Mountain Rural,TRUE,11/18/2014,8.450249701,-13.21970341,yes
+376,aa7ad1,10/11/2014,m,32,years,,75,159,yes,no,yes,no,yes,38.4,29.666548,West II,SL040207,West II,FALSE,10/13/2014,8.465155052,-13.2452022,yes
+377,63bc2e,8/20/2014,f,18,years,Port Hospital,52,114,yes,no,no,no,no,39.1,40.01231148,East I,SL040203,East I,TRUE,8/22/2014,8.488397045,-13.21667858,yes
+378,d9bb43,11/4/2014,f,13,years,,57,138,yes,no,yes,no,yes,39.5,29.93068683,West III,SL040208,West III,TRUE,11/5/2014,8.463469769,-13.26736242,yes
+379,e5998f,9/17/2014,m,7,years,Military Hospital,43,121,yes,no,no,no,no,40,29.36957858,West II,SL040207,West II,TRUE,9/18/2014,8.475869233,-13.23756034,yes
+380,a3b42e,8/27/2014,f,29,years,Port Hospital,67,157,yes,no,yes,no,no,38.4,27.18163009,Mountain Rural,SL040102,Mountain Rural,TRUE,9/4/2014,8.45221898,-13.21811886,yes
+381,d7a110,8/31/2014,m,23,years,Port Hospital,72,153,yes,yes,yes,no,yes,39.4,30.757401,West II,SL040207,Central II,FALSE,8/31/2014,8.467614443,-13.23328726,yes
+382,c230ae,11/16/2014,m,15,years,Military Hospital,59,152,yes,no,yes,no,yes,39.5,25.5367036,West III,SL040208,West III,TRUE,11/16/2014,8.453783494,-13.26144886,yes
+383,8c3a73,10/5/2014,m,11,years,,69,148,yes,no,yes,no,no,39.2,31.50109569,West II,SL040207,West II,TRUE,10/6/2014,8.469108772,-13.2374942,yes
+384,730b25,8/4/2014,f,14,years,Port Hospital,66,135,yes,no,yes,no,no,38.7,36.21399177,West I,SL040206,West I,TRUE,8/4/2014,8.483044036,-13.24383671,yes
+385,eb7d13,9/3/2014,f,4,years,,43,52,yes,no,yes,no,no,38.2,159.0236686,Mountain Rural,SL040102,Mountain Rural,TRUE,9/7/2014,8.452277067,-13.21665825,yes
+386,50d699,,Unknown,38,years,,78,201,yes,yes,yes,no,yes,40,19.30645281,West I,SL040206,West I,FALSE,11/14/2014,8.478184378,-13.24642514,yes
+387,506dfc,10/13/2014,m,11,years,Central Hospital,54,122,yes,no,yes,no,no,38.8,36.28056974,West I,SL040206,West I,TRUE,10/13/2014,8.485211451,-13.247536,yes
+388,657880,10/8/2014,m,20,years,Port Hospital,56,163,yes,no,yes,no,no,38.7,21.07719523,West II,SL040207,West II,TRUE,10/10/2014,8.47142118,-13.23431045,yes
+389,f32857,10/9/2014,f,31,years,Port Hospital,74,196,no,yes,yes,no,yes,36.8,19.26280716,Mountain Rural,SL040102,Mountain Rural,TRUE,10/10/2014,8.464460798,-13.21209096,yes
+390,a0bc11,9/17/2014,f,6,years,Other,21,77,yes,no,yes,no,yes,38.6,35.41912633,West III,SL040208,West III,TRUE,9/18/2014,8.464149377,-13.26134389,yes
+391,725b35,10/11/2014,m,18,years,Military Hospital,74,134,yes,no,yes,no,yes,40.3,41.21185119,West II,SL040207,West II,FALSE,10/11/2014,8.470642119,-13.23751758,yes
+392,176b73,10/3/2014,f,24,years,,57,160,no,no,yes,no,no,36.3,22.265625,West III,SL040208,West III,TRUE,10/4/2014,8.478471288,-13.26280999,yes
+393,27adef,8/11/2014,m,3,years,,46,73,no,no,yes,no,no,36.9,86.32013511,West II,SL040207,West II,TRUE,8/14/2014,8.463045406,-13.23240227,yes
+394,679c45,10/28/2014,f,9,years,Military Hospital,39,131,yes,no,no,no,yes,38.8,22.72594837,Mountain Rural,SL040102,Mountain Rural,TRUE,10/28/2014,8.464961154,-13.21145729,yes
+395,f52668,11/18/2014,m,12,years,Central Hospital,64,154,yes,no,yes,no,no,38.8,26.98600101,Mountain Rural,SL040102,Central II,TRUE,11/18/2014,8.461706107,-13.21814168,yes
+396,d29e8c,8/26/2014,m,24,years,,61,167,yes,no,yes,no,no,38.7,21.87242282,West II,SL040207,West II,FALSE,8/30/2014,8.461488019,-13.22319448,yes
+397,82494c,11/8/2014,f,9,years,Port Hospital,52,102,yes,no,yes,no,no,38.9,49.98077662,East II,SL040204,East II,TRUE,11/8/2014,8.48595789,-13.22369036,yes
+398,00c3c7,11/16/2014,f,13,years,Port Hospital,62,139,yes,no,yes,no,no,39,32.08943636,West II,SL040207,West II,TRUE,11/17/2014,8.466387984,-13.23329077,yes
+399,1ad5d8,11/6/2014,f,16,years,Port Hospital,54,121,yes,yes,yes,no,no,39.3,36.88272659,West II,SL040207,West II,TRUE,11/8/2014,8.471513597,-13.23365488,yes
+400,098ddf,9/9/2014,f,27,years,Port Hospital,64,203,yes,yes,yes,no,no,38.9,15.53058798,West II,SL040207,West II,TRUE,9/10/2014,8.468092288,-13.23833481,yes
+401,88ed04,10/31/2014,f,1,years,Other,24,33,no,yes,yes,no,no,36.5,220.3856749,Central I,SL040201,Central II,FALSE,11/1/2014,8.479465376,-13.23505427,yes
+402,7864f6,11/12/2014,f,16,years,Port Hospital,52,122,yes,no,yes,no,yes,39.5,34.93684493,West II,SL040207,West II,TRUE,11/12/2014,8.470776239,-13.23549969,yes
+403,bfedf6,10/13/2014,f,26,years,Port Hospital,55,169,yes,yes,yes,no,yes,38.9,19.25702882,East I,SL040203,East I,TRUE,10/14/2014,8.488905297,-13.21567483,yes
+404,5c05a9,10/13/2014,f,4,years,Port Hospital,40,78,no,no,yes,no,yes,36.5,65.74621959,East I,SL040203,East I,TRUE,10/17/2014,8.488332726,-13.21841699,yes
+405,a6ed82,9/18/2014,m,12,years,Other,62,152,no,no,no,no,yes,35.9,26.83518006,Mountain Rural,SL040102,Mountain Rural,TRUE,9/22/2014,8.451106865,-13.22216823,yes
+406,d5ef6e,10/8/2014,f,5,years,Central Hospital,47,88,yes,yes,yes,no,yes,38.7,60.69214876,Mountain Rural,SL040102,Mountain Rural,FALSE,10/9/2014,8.45609745,-13.21127783,yes
+407,269ddd,8/24/2014,m,1,years,Military Hospital,14,48,yes,no,yes,no,yes,38.8,60.76388889,West III,SL040208,West III,TRUE,8/25/2014,8.464928209,-13.26000653,yes
+408,ec10ca,,f,11,years,Port Hospital,44,116,yes,no,no,no,no,39,32.69916766,Mountain Rural,SL040102,Mountain Rural,TRUE,9/18/2014,8.463997025,-13.22076937,yes
+409,cd76e0,8/18/2014,f,10,years,Military Hospital,36,113,no,no,yes,no,no,36.9,28.1932806,Mountain Rural,SL040102,Mountain Rural,TRUE,8/22/2014,8.462198428,-13.21555649,yes
+410,331030,10/17/2014,m,4,years,St. Mark's Maternity Hospital (SMMH),43,79,,,,,,37.5,68.89921487,Mountain Rural,SL040102,Mountain Rural,TRUE,10/17/2014,8.464659087,-13.21022699,yes
+411,5993d0,10/19/2014,m,4,years,Central Hospital,40,75,yes,no,yes,no,no,39.2,71.11111111,West III,SL040208,West III,FALSE,10/20/2014,8.456836813,-13.25292238,yes
+412,303b01,9/9/2014,f,15,years,Port Hospital,45,136,yes,yes,yes,yes,yes,39.7,24.32958478,Mountain Rural,SL040102,Mountain Rural,TRUE,9/10/2014,8.467457868,-13.21229087,yes
+413,944303,11/19/2014,m,20,years,Port Hospital,61,157,yes,yes,yes,no,yes,38.5,24.74745426,East II,SL040204,East II,TRUE,11/21/2014,8.482121829,-13.21376907,yes
+414,de305e,10/16/2014,Unknown,,years,Military Hospital,68,133,yes,no,yes,no,yes,38.4,38.44196959,East I,SL040203,East I,TRUE,10/17/2014,8.488118432,-13.2172091,yes
+415,734753,9/10/2014,m,3,years,Other,54,65,yes,no,yes,yes,no,38.4,127.8106509,Mountain Rural,SL040102,Mountain Rural,TRUE,9/13/2014,8.477262084,-13.21870829,yes
+416,c15f36,6/17/2014,f,22,years,,67,150,yes,no,yes,no,no,39.5,29.77777778,Mountain Rural,SL040102,Mountain Rural,FALSE,6/19/2014,8.451362914,-13.21895334,yes
+417,013ff1,9/19/2014,f,17,years,St. Mark's Maternity Hospital (SMMH),51,144,yes,yes,yes,no,no,38.6,24.59490741,Mountain Rural,SL040102,Mountain Rural,TRUE,9/21/2014,8.464055672,-13.21241158,yes
+418,c322fc,11/19/2014,Unknown,30,years,Port Hospital,79,179,yes,yes,yes,no,yes,39.3,24.65590962,Mountain Rural,SL040102,Mountain Rural,TRUE,11/20/2014,8.462384718,-13.22262633,yes
+419,d36a83,6/21/2014,m,28,years,,70,192,yes,no,yes,yes,yes,38.9,18.98871528,East II,SL040204,East II,TRUE,6/24/2014,8.475938144,-13.2101948,yes
+420,3334d0,10/9/2014,m,23,years,Port Hospital,67,155,yes,no,yes,no,no,39.1,27.88761707,East III,SL040205,East III,TRUE,10/9/2014,8.470388167,-13.21032299,yes
+421,25bfe6,9/25/2014,m,32,,Military Hospital,71,186,no,no,no,no,yes,37.8,20.52260377,,SL040204,Central II,FALSE,9/27/2014,8.479821409,-13.21116408,no
+422,47eb8b,8/21/2014,f,6,years,Other,45,112,yes,no,yes,no,yes,39.4,35.87372449,East II,SL040204,East II,TRUE,8/29/2014,8.479435769,-13.21735627,yes
+423,de3b80,11/8/2014,f,16,years,,56,100,no,no,yes,no,yes,37.2,56,West II,SL040207,West II,TRUE,11/10/2014,8.475543024,-13.23676764,yes
+424,02502c,9/27/2014,f,12,years,,50,118,yes,yes,yes,no,yes,39,35.90922149,West III,SL040208,West III,TRUE,9/28/2014,8.453671702,-13.26517016,yes
+425,545b3b,9/25/2014,f,0,years,Port Hospital,7,18,yes,no,yes,no,yes,38.6,216.0493827,East II,SL040204,East II,TRUE,9/29/2014,8.48138059,-13.22097845,yes
+426,a03147,11/7/2014,m,0,years,,11,28,no,no,yes,no,no,36.9,140.3061224,Central I,SL040201,Central I,FALSE,11/8/2014,8.472320121,-13.22481968,yes
+427,bd14cc,,m,5,years,Port Hospital,55,105,yes,no,yes,no,yes,38.3,49.88662132,Central I,SL040201,Central I,TRUE,9/21/2014,8.47149685,-13.22630638,yes
+428,e1ec99,9/25/2014,m,39,years,Port Hospital,72,200,yes,no,yes,no,no,38.9,18,East II,SL040204,East II,TRUE,9/25/2014,8.479539043,-13.2100952,yes
+429,627db7,9/4/2014,m,16,years,St. Mark's Maternity Hospital (SMMH),55,133,yes,no,no,no,yes,39.3,31.09276952,Mountain Rural,SL040102,Mountain Rural,TRUE,9/6/2014,8.462753694,-13.21960234,yes
+430,82b353,10/12/2014,f,29,years,Military Hospital,50,160,yes,no,yes,no,no,38.1,19.53125,East II,SL040204,East II,TRUE,10/12/2014,8.481194332,-13.2115797,yes
+431,b12a74,11/24/2014,f,6,years,,26,88,yes,no,yes,no,no,39.4,33.57438017,Mountain Rural,SL040102,Mountain Rural,FALSE,11/26/2014,8.453633944,-13.21350084,yes
+432,0fbbeb,11/14/2014,m,9,years,Port Hospital,43,126,yes,no,no,no,yes,39.3,27.08490804,Mountain Rural,SL040102,Mountain Rural,TRUE,11/14/2014,8.453644805,-13.2113636,yes
+433,c800a4,9/11/2014,f,8,years,Port Hospital,26,115,,,,,,36.9,19.65973535,Mountain Rural,SL040102,Mountain Rural,TRUE,9/11/2014,8.472470888,-13.21887152,yes
+434,72f036,10/1/2014,m,17,years,Central Hospital,60,125,yes,no,yes,no,yes,39.8,38.4,East II,SL040204,East II,TRUE,10/5/2014,8.483335413,-13.2131163,yes
+435,80b1c9,10/10/2014,m,23,years,Port Hospital,68,131,,,,,,36.7,39.62473049,East II,SL040204,East II,TRUE,10/10/2014,8.480191929,-13.213009,yes
+436,51c203,9/21/2014,f,18,years,,51,146,yes,no,no,no,no,38.9,23.92568962,Mountain Rural,SL040102,Mountain Rural,FALSE,9/22/2014,8.463479507,-13.21519187,yes
+437,808669,11/13/2014,m,33,years,Port Hospital,72,203,yes,no,yes,no,no,38.9,17.47191148,Mountain Rural,SL040102,Mountain Rural,TRUE,11/13/2014,8.45477581,-13.20791313,yes
+438,78e5b6,8/14/2014,f,18,years,Port Hospital,50,134,yes,no,yes,yes,no,38.6,27.8458454,West II,SL040207,West II,TRUE,8/24/2014,8.470878926,-13.23718453,yes
+439,8d77e2,11/22/2014,f,7,years,St. Mark's Maternity Hospital (SMMH),36,112,yes,yes,yes,no,no,38.7,28.69897959,Mountain Rural,SL040102,Mountain Rural,TRUE,11/24/2014,8.461968834,-13.21797583,yes
+440,d3cff4,9/14/2014,f,14,years,,61,152,yes,no,yes,no,no,39.7,26.40235457,West III,SL040208,West III,TRUE,9/14/2014,8.455975144,-13.26079272,yes
+441,9e74c4,6/22/2014,m,4,years,St. Mark's Maternity Hospital (SMMH),50,64,yes,yes,no,no,no,39,122.0703125,East III,SL040205,Central II,FALSE,6/24/2014,8.470845198,-13.2116372,yes
+442,ed1033,8/24/2014,f,27,years,St. Mark's Maternity Hospital (SMMH),68,171,yes,yes,yes,no,yes,40.3,23.25501864,Mountain Rural,SL040102,Mountain Rural,TRUE,8/27/2014,8.461068987,-13.22116959,yes
+443,a5f1d1,9/25/2014,m,7,years,Port Hospital,55,114,yes,no,yes,no,no,38.1,42.32071407,East I,SL040203,East I,TRUE,9/28/2014,8.481419277,-13.21076707,yes
+444,474f41,9/12/2014,m,8,years,Port Hospital,46,116,yes,no,yes,no,no,39.2,34.18549346,West III,SL040208,West III,TRUE,9/12/2014,8.45481604,-13.26097775,yes
+445,cfbd0a,10/3/2014,f,4,years,,41,70,yes,yes,yes,no,yes,39.4,83.67346939,Mountain Rural,SL040102,Mountain Rural,TRUE,10/5/2014,8.461789097,-13.22157881,yes
+446,788d03,9/17/2014,m,27,years,Other,86,131,no,no,yes,no,yes,36.5,50.11362974,East I,SL040203,East I,FALSE,9/20/2014,8.485865718,-13.21908175,yes
+447,4b0f10,,f,1,years,Military Hospital,17,40,yes,no,yes,no,yes,39.7,106.25,Mountain Rural,SL040102,Mountain Rural,TRUE,9/18/2014,8.464951886,-13.22283762,yes
+448,8c9de8,7/12/2014,f,1,years,,18,37,yes,no,yes,no,yes,39.1,131.4828342,East II,SL040204,East II,TRUE,7/17/2014,8.479148598,-13.21590954,yes
+449,60c8fd,11/11/2014,m,21,years,Military Hospital,59,152,no,no,yes,no,no,37.3,25.5367036,Mountain Rural,SL040102,Mountain Rural,TRUE,11/11/2014,8.463101113,-13.21604277,yes
+450,5fa181,9/27/2014,f,29,years,Military Hospital,67,187,,,,,,36.8,19.15982728,West II,SL040207,West II,TRUE,9/29/2014,8.461977716,-13.22311015,yes
+451,ad9518,11/8/2014,f,17,years,Port Hospital,51,134,yes,no,yes,no,no,38.6,28.40276231,West II,SL040207,West II,FALSE,11/11/2014,8.482841383,-13.25622934,yes
+452,a0de7d,10/25/2014,m,69,years,Other,97,240,yes,no,no,no,yes,39.6,16.84027778,Central I,SL040201,Central I,TRUE,10/25/2014,8.47849066,-13.23588198,yes
+453,0be051,10/14/2014,Unknown,3,years,Military Hospital,39,78,yes,yes,yes,no,yes,39.1,64.1025641,West III,SL040208,West III,TRUE,10/15/2014,8.471660163,-13.26584618,yes
+454,1.92E+38,10/28/2014,m,3,years,Port Hospital,46,65,yes,no,yes,no,yes,38.5,108.8757396,West II,SL040207,West II,TRUE,10/30/2014,,,yes
+455,dee922,9/21/2014,f,14,years,Port Hospital,72,143,yes,no,yes,no,no,39.3,35.2095457,Mountain Rural,SL040102,Mountain Rural,TRUE,9/26/2014,8.46345319,-13.21604279,yes
+456,3e714e,10/29/2014,m,6,years,,31,104,,,,,,37.5,28.6612426,West II,SL040207,West II,FALSE,10/29/2014,8.462306805,-13.22338052,yes
+457,823533,7/11/2014,m,13,years,Other,71,144,no,no,yes,no,yes,37.3,34.23996914,West III,SL040208,West III,TRUE,7/14/2014,8.480455378,-13.26307007,yes
+458,e8bbf8,10/11/2014,f,41,years,Central Hospital,74,226,yes,no,yes,no,yes,39.1,14.48821364,Central I,SL040201,Central I,TRUE,10/13/2014,8.471026718,-13.22324169,yes
+459,2e312f,10/8/2014,m,12,years,Central Hospital,64,131,yes,no,yes,no,yes,39.1,37.29386399,West III,SL040208,West III,TRUE,10/10/2014,8.461060184,-13.26630314,yes
+460,4b158a,11/7/2014,Unknown,69,years,,87,262,no,no,yes,no,yes,37.4,12.67408659,Central I,SL040201,Central I,TRUE,11/9/2014,8.48203319,-13.23049236,yes
+461,728730,9/19/2014,f,19,years,Port Hospital,48,135,no,no,yes,no,no,37.1,26.33744856,West III,SL040208,Central II,FALSE,9/23/2014,8.460027879,-13.26968837,yes
+462,18f408,8/9/2014,m,41,years,Port Hospital,78,172,yes,no,yes,no,no,38.5,26.36560303,West II,SL040207,West II,TRUE,8/13/2014,8.483438949,-13.25794668,yes
+463,1eb9b6,8/22/2014,f,3,years,St. Mark's Maternity Hospital (SMMH),21,45,yes,no,yes,no,yes,39.3,103.7037037,West III,SL040208,West III,TRUE,8/24/2014,8.454566378,-13.26020659,yes
+464,e9c263,10/20/2014,Unknown,,years,Other,40,96,yes,no,yes,no,yes,38.8,43.40277778,East I,SL040203,East I,TRUE,10/21/2014,8.487485916,-13.21632917,yes
+465,db97c6,,m,42,years,,85,183,yes,yes,yes,no,yes,38.9,25.38146854,Mountain Rural,SL040102,Mountain Rural,TRUE,8/28/2014,8.476518202,-13.21860634,yes
+466,cad2c1,9/6/2014,m,24,years,Military Hospital,58,154,yes,no,no,no,no,38.7,24.45606342,East II,SL040204,East II,FALSE,9/10/2014,8.482734918,-13.21822691,yes
+467,d0523a,5/24/2014,f,14,years,,69,126,yes,yes,yes,no,yes,39.2,43.46182918,West II,SL040207,West II,TRUE,5/26/2014,8.48379248,-13.2565629,yes
+468,e3b7b8,10/31/2014,m,19,years,St. Mark's Maternity Hospital (SMMH),69,153,yes,no,yes,no,no,38.2,29.47584262,Mountain Rural,SL040102,Mountain Rural,TRUE,11/2/2014,8.469024717,-13.21263119,yes
+469,a42ade,7/19/2014,f,21,years,,61,163,yes,yes,yes,no,yes,38.7,22.95908766,Mountain Rural,SL040102,Mountain Rural,TRUE,7/20/2014,8.456771104,-13.21230274,yes
+470,ee65e4,7/31/2014,m,6,years,Port Hospital,50,102,yes,yes,yes,no,yes,39.3,48.05843906,West II,SL040207,West II,TRUE,8/6/2014,8.470375808,-13.23375087,yes
+471,8e6dc1,8/2/2014,m,22,years,,69,152,yes,no,yes,no,no,39,29.86495845,West III,SL040208,West III,FALSE,8/11/2014,8.452131148,-13.2608193,yes
+472,895618,7/6/2014,f,12,years,St. Mark's Maternity Hospital (SMMH),55,128,yes,yes,yes,no,yes,38.3,33.56933594,West II,SL040207,West II,TRUE,7/6/2014,8.460715138,-13.22442242,yes
+473,bbfa93,6/18/2014,f,7,years,Other,34,91,no,no,yes,no,yes,36.5,41.05784326,East II,SL040204,East II,TRUE,6/20/2014,8.477799469,-13.21572788,yes
+474,d0288c,9/8/2014,f,30,years,Military Hospital,58,182,yes,yes,yes,no,no,38.6,17.50996256,West III,SL040208,West III,TRUE,9/10/2014,8.452429309,-13.26706042,yes
+475,05c075,10/4/2014,m,11,years,,60,146,yes,no,yes,no,yes,39,28.14787014,East I,SL040203,East I,TRUE,10/5/2014,8.48783712,-13.21623355,yes
+476,90360f,8/4/2014,m,16,years,,71,156,yes,no,yes,no,no,38.4,29.17488494,West II,SL040207,West II,FALSE,8/6/2014,8.463417574,-13.2235674,yes
+477,c41648,8/15/2014,f,11,years,Other,51,126,yes,no,no,no,no,39.1,32.1239607,Central II,SL040202,Central II,TRUE,8/16/2014,8.478030222,-13.2386208,yes
+478,d7824d,11/20/2014,m,50,years,Other,87,209,yes,yes,yes,no,no,38.6,19.91712644,West III,SL040208,West III,TRUE,11/23/2014,8.480628621,-13.26477763,yes
+479,f8318d,7/11/2014,f,5,years,Other,42,93,yes,no,no,no,no,38.5,48.56052723,Mountain Rural,SL040102,Mountain Rural,TRUE,7/15/2014,8.467726816,-13.2116863,yes
+480,5a7920,9/30/2014,m,30,years,St. Mark's Maternity Hospital (SMMH),73,158,yes,no,no,no,no,39.4,29.24210864,West II,SL040207,West II,TRUE,10/5/2014,8.47385368,-13.25314465,yes
+481,01b1fd,8/26/2014,f,2,years,,21,39,yes,no,yes,no,no,38.9,138.0670611,,SL040207,Central II,FALSE,9/6/2014,8.46409296,-13.24410659,no
+482,62b067,9/17/2014,m,6,years,Port Hospital,34,106,no,yes,yes,no,no,37.2,30.25987896,Mountain Rural,SL040102,Mountain Rural,TRUE,9/20/2014,8.454189693,-13.24317829,yes
+483,254930,10/14/2014,f,8,years,Central Hospital,46,115,yes,yes,yes,no,yes,39.6,34.7826087,Mountain Rural,SL040102,Mountain Rural,TRUE,10/17/2014,8.449872776,-13.21006031,yes
+484,604232,11/2/2014,m,11,years,Military Hospital,54,150,yes,yes,yes,no,yes,39.5,24,Mountain Rural,SL040102,Mountain Rural,TRUE,11/5/2014,8.457080556,-13.24067219,yes
+485,8b100a,9/22/2014,f,16,years,Port Hospital,54,122,no,yes,yes,no,no,36.5,36.28056974,West II,SL040207,West II,TRUE,9/24/2014,8.469436277,-13.24604027,yes
+486,b82030,11/20/2014,f,24,years,Port Hospital,65,167,yes,no,no,no,yes,38.9,23.30668005,West III,SL040208,West III,FALSE,11/22/2014,8.466350821,-13.26598291,yes
+487,8e455c,7/31/2014,f,22,years,Port Hospital,56,151,yes,no,no,yes,no,38.6,24.5603263,East I,SL040203,East I,TRUE,8/12/2014,8.485764543,-13.2158241,yes
+488,f13395,8/13/2014,f,7,years,Central Hospital,43,96,yes,no,no,no,no,39.9,46.65798611,Mountain Rural,SL040102,Mountain Rural,TRUE,8/17/2014,8.450015289,-13.21968206,yes
+489,4e8054,11/6/2014,f,9,years,Other,42,125,yes,no,yes,no,yes,38.7,26.88,Mountain Rural,SL040102,Mountain Rural,TRUE,11/6/2014,8.46211377,-13.21852096,yes
+490,99358d,11/8/2014,m,23,years,,63,153,yes,no,yes,no,no,39.7,26.91272587,East II,SL040204,East II,TRUE,11/8/2014,8.483793472,-13.22617324,yes
+491,92ab68,7/19/2014,f,2,,Military Hospital,30,49,yes,yes,yes,no,no,39.1,124.9479384,West II,SL040207,West II,FALSE,7/20/2014,8.465171481,-13.23335167,yes
+492,f648f5,7/1/2014,f,1,years,,19,35,yes,no,yes,no,no,39,155.1020408,Mountain Rural,SL040102,Mountain Rural,TRUE,7/6/2014,8.468657771,-13.21624837,yes
+493,12d3e5,8/28/2014,m,43,years,,84,192,yes,no,yes,no,no,39.7,22.78645833,Central I,SL040201,Central II,TRUE,8/28/2014,8.472525333,-13.22581462,yes
+494,e0beeb,11/15/2014,m,4,years,,38,62,yes,no,yes,no,no,39.1,98.855359,Mountain Rural,SL040102,Mountain Rural,TRUE,11/15/2014,8.454831884,-13.24082658,yes
+495,16dcd2,9/1/2014,f,11,years,Military Hospital,37,114,yes,no,yes,no,no,38.8,28.47029855,West II,SL040207,West II,TRUE,9/7/2014,8.477332913,-13.23975304,yes
+496,355a4c,11/5/2014,f,1,years,Central Hospital,17,31,no,no,yes,no,yes,37.6,176.8990635,West III,SL040208,West III,FALSE,11/7/2014,8.45782891,-13.25865274,yes
+497,57487,11/26/2014,m,10,years,Other,58,126,yes,no,yes,no,no,39.5,36.53313177,East I,SL040203,East I,TRUE,11/26/2014,,,yes
+498,5400a2,7/4/2014,f,6,years,,33,89,yes,no,yes,no,no,39.3,41.66140639,Mountain Rural,SL040102,Mountain Rural,TRUE,7/9/2014,8.463974463,-13.21567305,yes
+499,303410,11/2/2014,m,7,years,Military Hospital,49,112,,,,,,36.5,39.0625,West III,SL040208,West III,TRUE,11/4/2014,8.461321624,-13.26842467,yes
+500,10cae2,10/18/2014,f,10,years,Port Hospital,52,127,yes,no,yes,no,yes,39,32.24006448,West II,SL040207,West II,TRUE,10/18/2014,8.467879551,-13.24713246,yes
+501,ab6e76,9/30/2014,m,4,years,Port Hospital,46,64,yes,no,yes,no,no,40,112.3046875,Mountain Rural,SL040102,Central II,FALSE,9/30/2014,8.475465316,-13.2176203,yes
+502,c8a9f2,11/14/2014,Unknown,1,years,Other,22,28,yes,yes,yes,no,yes,38.7,280.6122449,East III,SL040205,East III,TRUE,11/15/2014,8.462223642,-13.20828171,yes
+503,f775f4,9/1/2014,m,16,years,,64,137,yes,yes,yes,no,yes,38.9,34.0987799,East I,SL040203,East I,TRUE,9/3/2014,8.485749952,-13.21525608,yes
+504,47b1e8,10/7/2014,f,2,years,,22,42,yes,no,yes,no,no,38.8,124.7165533,Mountain Rural,SL040102,Mountain Rural,TRUE,10/7/2014,8.470683914,-13.21890874,yes
+505,3fa147,,m,13,years,Other,63,146,yes,yes,yes,no,no,39.7,29.55526365,East II,SL040204,East II,TRUE,8/31/2014,8.480765333,-13.21678905,yes
+506,44de7a,8/13/2014,m,33,years,,57,170,no,no,yes,no,no,37.3,19.72318339,West II,SL040207,West II,FALSE,8/20/2014,8.461879361,-13.23279094,yes
+507,b18cb7,10/14/2014,m,50,years,Other,83,190,,,,,,37.3,22.99168975,West III,SL040208,West III,TRUE,10/15/2014,8.461971594,-13.26588102,yes
+508,08382e,9/8/2014,f,8,years,St. Mark's Maternity Hospital (SMMH),32,85,yes,no,yes,no,yes,39,44.29065744,Mountain Rural,SL040102,Mountain Rural,TRUE,9/12/2014,8.453879492,-13.21508444,yes
+509,30247e,11/25/2014,m,9,years,Military Hospital,42,134,yes,yes,yes,yes,yes,38.8,23.39051014,West II,SL040207,West II,TRUE,11/27/2014,8.466893541,-13.23621789,yes
+510,2f8828,11/5/2014,f,22,years,,67,153,yes,no,yes,yes,yes,38.6,28.62147037,Mountain Rural,SL040102,Mountain Rural,TRUE,11/5/2014,8.476376557,-13.21837734,yes
+511,d05a15,11/26/2014,f,8,years,Central Hospital,33,118,yes,yes,yes,no,no,38.5,23.70008618,Central II,SL040202,Central II,FALSE,11/27/2014,8.489045926,-13.23656065,yes
+512,b013ab,7/30/2014,m,66,years,,86,237,yes,yes,yes,no,yes,39.6,15.31093664,West III,SL040208,West III,TRUE,7/30/2014,8.477653183,-13.27002643,yes
+513,9849ee,8/19/2014,m,9,years,Military Hospital,48,119,yes,no,no,no,no,38.6,33.89591131,Central I,SL040201,Central I,TRUE,8/24/2014,8.478034859,-13.2290362,yes
+514,70baad,6/20/2014,m,39,years,Port Hospital,75,146,yes,no,yes,no,yes,39.8,35.18483768,West II,SL040207,West II,TRUE,6/24/2014,8.473283546,-13.23364313,yes
+515,4cff96,6/15/2014,m,5,years,Port Hospital,58,87,yes,no,yes,no,yes,39.4,76.62835249,Mountain Rural,SL040102,Mountain Rural,TRUE,6/16/2014,8.462368043,-13.21765152,yes
+516,2bf2f3,10/2/2014,f,6,years,Port Hospital,44,86,yes,no,yes,no,no,40.3,59.49161709,Central I,SL040201,Central I,FALSE,10/2/2014,8.479096017,-13.23381195,yes
+517,119a92,11/24/2014,m,22,years,Military Hospital,56,165,yes,no,yes,yes,yes,38.5,20.56932966,Mountain Rural,SL040102,Mountain Rural,TRUE,11/25/2014,8.48329125,-13.22311127,yes
+518,4ade58,8/7/2014,m,46,years,Other,78,215,no,no,no,no,yes,37,16.87398594,West III,SL040208,West III,TRUE,8/9/2014,8.452794828,-13.25914054,yes
+519,d01454,10/20/2014,Unknown,12,years,,43,125,yes,no,yes,no,no,38.6,27.52,Central II,SL040202,Central II,TRUE,10/20/2014,8.477568771,-13.23749183,yes
+520,5f8f6c,8/31/2014,f,6,years,,27,87,yes,no,yes,no,yes,39.5,35.67181926,West II,SL040207,West II,TRUE,9/6/2014,8.466272699,-13.23171288,yes
+521,1bb136,9/22/2014,f,17,years,,54,130,,,,,,37.9,31.95266272,Mountain Rural,SL040102,Central II,FALSE,9/24/2014,8.451224915,-13.21777881,yes
+522,da6eda,11/19/2014,f,3,years,Port Hospital,30,67,yes,yes,no,no,no,39.1,66.83002896,West II,SL040207,West II,TRUE,11/21/2014,8.48310933,-13.2577615,yes
+523,61c40f,8/28/2014,f,24,years,,62,143,yes,no,yes,no,yes,39.7,30.31933102,West III,SL040208,West III,TRUE,8/30/2014,8.465905583,-13.26256524,yes
+524,3370a7,11/26/2014,m,14,years,Port Hospital,68,148,yes,yes,yes,no,no,39.3,31.04455807,East II,SL040204,East II,TRUE,11/27/2014,8.480217153,-13.2106562,yes
+525,4fa236,11/1/2014,m,1,years,Port Hospital,17,45,no,no,no,no,no,37.3,83.95061728,Mountain Rural,SL040102,Mountain Rural,TRUE,11/2/2014,8.468173488,-13.21124599,yes
+526,d43117,10/26/2014,f,6,years,Military Hospital,38,88,,,,,,37.9,49.07024793,East I,SL040203,East I,FALSE,10/26/2014,8.486663134,-13.21529814,yes
+527,8e5bba,9/25/2014,f,17,years,Other,56,108,yes,yes,yes,no,no,38.1,48.01097394,Mountain Rural,SL040102,Mountain Rural,TRUE,9/30/2014,8.472770645,-13.21562529,yes
+528,fe2849,9/11/2014,f,5,years,Port Hospital,53,79,yes,no,yes,no,no,40,84.92228809,Central I,SL040201,Central I,TRUE,9/12/2014,8.48744449,-13.23323852,yes
+529,904052,11/10/2014,f,19,years,Other,56,111,yes,no,yes,no,no,38.6,45.45085626,West II,SL040207,West II,TRUE,11/11/2014,8.468083985,-13.24729386,yes
+530,034b46,8/16/2014,m,38,years,Military Hospital,75,225,yes,no,yes,no,no,39,14.81481481,Mountain Rural,SL040102,Mountain Rural,TRUE,8/22/2014,8.452434681,-13.21595245,yes
+531,b38ca8,9/10/2014,m,14,years,Port Hospital,56,156,yes,yes,yes,yes,no,39,23.01117686,West III,SL040208,West III,FALSE,9/13/2014,8.4551214,-13.26450968,yes
+532,e27816,7/1/2014,m,30,years,Port Hospital,68,174,yes,no,yes,no,yes,38.7,22.46003435,West II,SL040207,West II,TRUE,7/10/2014,8.466236217,-13.24715322,yes
+533,fe9196,11/2/2014,m,5,years,Military Hospital,48,82,yes,no,yes,no,yes,38.5,71.38607971,West I,SL040206,West I,TRUE,11/6/2014,8.481630463,-13.24551722,yes
+534,f1d5e5,7/4/2014,m,3,years,Other,34,65,yes,no,no,no,no,39.2,80.47337278,Central I,SL040201,Central I,TRUE,7/6/2014,8.474206039,-13.22555635,yes
+535,3c498e,9/30/2014,m,21,years,,63,140,yes,no,yes,no,yes,39.5,32.14285714,West II,SL040207,West II,TRUE,10/2/2014,8.464915574,-13.24861934,yes
+536,baa64c,8/17/2014,f,23,years,Port Hospital,58,158,yes,no,yes,no,yes,38,23.23345618,Central I,SL040201,Central I,FALSE,8/19/2014,8.487712799,-13.2340853,yes
+537,75a20a,8/28/2014,f,4,years,Port Hospital,37,60,yes,no,yes,yes,yes,38.1,102.7777778,Central I,SL040201,Central I,TRUE,8/28/2014,8.477000208,-13.22956267,yes
+538,300cf2,9/23/2014,f,28,years,Other,65,184,yes,no,yes,no,yes,38.5,19.1989603,West II,SL040207,West II,TRUE,9/23/2014,8.470779243,-13.24542624,yes
+539,6c2783,6/6/2014,f,5,years,,50,68,yes,no,yes,no,no,38.8,108.1314879,Mountain Rural,SL040102,Mountain Rural,TRUE,6/28/2014,8.449094756,-13.21959449,yes
+540,55d542,8/10/2014,f,19,years,St. Mark's Maternity Hospital (SMMH),54,124,yes,no,no,no,no,38.3,35.11966701,West II,SL040207,West II,TRUE,8/28/2014,8.47700857,-13.24125276,yes
+541,3d26f2,8/24/2014,m,21,years,Military Hospital,70,136,yes,yes,yes,no,no,39.3,37.84602076,,SL040207,Central II,FALSE,8/27/2014,8.471965509,-13.2341469,no
+542,f60a47,11/14/2014,m,5,years,Port Hospital,50,119,yes,no,yes,no,no,39.4,35.30824094,West III,SL040208,West III,TRUE,11/18/2014,8.46059152,-13.26486061,yes
+543,76b97a,5/16/2014,m,6,years,Other,44,101,yes,no,yes,no,no,39,43.13302617,East I,SL040203,East I,TRUE,5/25/2014,8.481300282,-13.21067094,yes
+544,a7c306,11/10/2014,f,20,years,Military Hospital,59,143,yes,no,yes,no,yes,38.9,28.85226661,West II,SL040207,West II,TRUE,11/10/2014,8.461800783,-13.23314889,yes
+545,571076,8/7/2014,f,24,years,Military Hospital,62,166,yes,yes,yes,yes,no,38.2,22.4996371,Mountain Rural,SL040102,Mountain Rural,TRUE,8/8/2014,8.449332343,-13.21913909,yes
+546,7d25a6,8/16/2014,Unknown,27,years,Central Hospital,67,157,no,no,yes,no,yes,37.9,27.18163009,Central I,SL040201,Central I,FALSE,8/21/2014,8.48317013,-13.23191182,yes
+547,b3f614,8/20/2014,f,26,years,,56,141,yes,no,no,no,no,38.4,28.1675972,Mountain Rural,SL040102,Mountain Rural,TRUE,8/24/2014,8.478497371,-13.22280947,yes
+548,833a20,9/30/2014,m,4,months,Port Hospital,40,65,yes,no,no,no,no,38.9,94.67455621,West II,SL040207,West II,TRUE,10/2/2014,8.467034494,-13.24693185,yes
+549,3857bf,9/11/2014,m,9,years,,47,106,yes,no,yes,no,no,39.6,41.82983268,Mountain Rural,SL040102,Mountain Rural,TRUE,9/12/2014,8.464850793,-13.21394324,yes
+550,08f742,10/28/2014,m,1,years,Other,17,43,no,no,yes,no,no,36.3,91.94159005,West III,SL040208,West III,TRUE,10/29/2014,8.476962736,-13.26604786,yes
+551,dc7696,11/23/2014,f,5,years,St. Mark's Maternity Hospital (SMMH),48,83,yes,yes,yes,no,yes,38.5,69.67629554,West II,SL040207,West II,FALSE,11/24/2014,8.470227422,-13.23541286,yes
+552,1eea27,10/28/2014,f,31,years,Port Hospital,76,217,yes,no,no,no,yes,39,16.13965045,Mountain Rural,SL040102,Mountain Rural,TRUE,10/29/2014,8.447886901,-13.21982338,yes
+553,648351,10/12/2014,f,30,years,Port Hospital,71,194,no,no,yes,yes,yes,37.1,18.86491657,Mountain Rural,SL040102,Mountain Rural,TRUE,10/15/2014,8.478817487,-13.22269365,yes
+554,18b45d,10/15/2014,f,1,years,Military Hospital,16,29,yes,no,yes,no,no,39.1,190.2497027,Mountain Rural,SL040102,Mountain Rural,TRUE,10/16/2014,8.46329522,-13.217245,yes
+555,7bdda7,9/27/2014,f,13,years,Port Hospital,60,136,,,,,,37.5,32.43944637,West II,SL040207,West II,TRUE,9/27/2014,8.465752901,-13.248355,yes
+556,225256,10/24/2014,m,10,years,Port Hospital,55,117,yes,no,no,no,yes,39.5,40.17824531,West III,SL040208,West III,FALSE,10/25/2014,8.464698027,-13.2635352,yes
+557,c0f295,10/26/2014,m,16,years,,66,121,yes,yes,yes,yes,yes,38.6,45.07888805,West III,SL040208,West III,TRUE,10/27/2014,8.460874822,-13.26628275,yes
+558,642146,11/7/2014,f,4,years,Central Hospital,37,60,,,,,,36.4,102.7777778,Mountain Rural,SL040102,Mountain Rural,TRUE,11/7/2014,8.472553631,-13.21530563,yes
+559,652088,11/13/2014,f,1,years,,12,48,yes,no,no,no,no,39.2,52.08333333,West I,SL040206,West I,TRUE,11/19/2014,8.484135657,-13.24679984,yes
+560,98992e,8/29/2014,m,7,years,Military Hospital,51,115,yes,no,yes,no,no,39,38.56332703,West II,SL040207,West II,TRUE,9/1/2014,8.466899834,-13.24775571,yes
+561,9a9a84,8/18/2014,m,70,,Military Hospital,94,222,yes,no,yes,no,no,38.1,19.07312718,West II,SL040207,Central II,FALSE,8/19/2014,8.467278822,-13.24604362,yes
+562,b52c9a,9/7/2014,f,33,years,,71,177,yes,no,yes,no,no,39.6,22.66270867,Mountain Rural,SL040102,Mountain Rural,TRUE,9/16/2014,8.454763396,-13.24068808,yes
+563,f027f8,9/9/2014,f,28,years,Port Hospital,74,170,yes,no,yes,no,yes,39.5,25.60553633,Central I,SL040201,Central I,TRUE,9/11/2014,8.473474792,-13.22741182,yes
+564,52735e,9/2/2014,m,6,years,Port Hospital,45,106,no,no,yes,no,yes,36.6,40.0498398,East II,SL040204,East II,TRUE,9/8/2014,8.482093639,-13.21891138,yes
+565,53f4ae,8/2/2014,f,6,years,Military Hospital,37,114,yes,no,yes,yes,yes,38.6,28.47029855,Mountain Rural,SL040102,Mountain Rural,TRUE,8/4/2014,8.461362267,-13.22233787,yes
+566,8a4580,6/2/2014,Unknown,3,years,Military Hospital,33,70,yes,no,yes,no,yes,39.4,67.34693878,Mountain Rural,SL040102,Mountain Rural,FALSE,6/2/2014,8.46388925,-13.22220027,yes
+567,672ab9,9/3/2014,f,5,years,Other,41,78,yes,yes,yes,no,no,39.2,67.38987508,Central I,SL040201,Central I,TRUE,9/4/2014,8.480666651,-13.23175304,yes
+568,d6d90f,10/14/2014,m,18,years,Other,68,159,yes,yes,no,no,no,39,26.89767019,Mountain Rural,SL040102,Mountain Rural,TRUE,10/15/2014,8.461483792,-13.21820891,yes
+569,3ebb3e,11/11/2014,m,19,years,Other,66,137,yes,no,yes,no,yes,39.6,35.16436678,West III,SL040208,West III,TRUE,11/15/2014,8.463173788,-13.26170901,yes
+570,99e1a5,10/17/2014,f,8,years,Military Hospital,35,113,yes,no,yes,no,no,39.2,27.41013392,East I,SL040203,East I,TRUE,10/18/2014,8.486536616,-13.2192405,yes
+571,b1b620,11/1/2014,m,14,years,Port Hospital,76,177,yes,no,yes,yes,yes,38.4,24.25867407,East I,SL040203,East I,FALSE,11/1/2014,8.487529501,-13.21515355,yes
+572,7ba3ff,10/11/2014,f,11,years,Military Hospital,56,92,,,,,,36.9,66.16257089,West III,SL040208,West III,TRUE,10/13/2014,8.475310022,-13.26476408,yes
+573,8f0879,,m,30,years,,64,171,yes,no,yes,no,yes,39.5,21.88707637,Mountain Rural,SL040102,Mountain Rural,TRUE,10/8/2014,8.464532734,-13.21182435,yes
+574,644c23,11/3/2014,m,21,years,Central Hospital,67,161,yes,no,yes,no,no,38.9,25.84776822,West II,SL040207,West II,TRUE,11/5/2014,8.470259549,-13.23413793,yes
+575,a356d4,10/11/2014,m,7,years,Port Hospital,38,93,no,no,yes,no,no,37.1,43.93571511,East II,SL040204,East II,TRUE,10/11/2014,8.479665288,-13.21851347,yes
+576,cccca6,9/2/2014,m,3,years,,33,60,yes,no,yes,no,no,39.8,91.66666667,East II,SL040204,East II,FALSE,9/4/2014,8.48547851,-13.2247781,yes
+577,10cb7a,9/17/2014,f,2,years,,30,39,yes,no,yes,no,yes,39.2,197.2386588,West III,SL040208,West III,TRUE,9/21/2014,8.465233519,-13.26062602,yes
+578,cfe2c7,11/1/2014,m,3,years,Military Hospital,48,68,yes,no,no,no,yes,38.6,103.8062284,West III,SL040208,West III,TRUE,11/3/2014,8.45288891,-13.25964265,yes
+579,36db8b,10/6/2014,m,16,years,Military Hospital,65,148,yes,no,yes,no,no,40,29.67494522,Mountain Rural,SL040102,Mountain Rural,TRUE,10/6/2014,8.465038609,-13.21689861,yes
+580,47d0b3,8/22/2014,f,7,years,Other,36,86,no,no,yes,no,no,37.1,48.67495944,East I,SL040203,East I,TRUE,8/26/2014,8.488750894,-13.2158988,yes
+581,0197b6,9/19/2014,m,7,years,Port Hospital,47,81,yes,yes,yes,no,no,39.3,71.63542143,Mountain Rural,SL040102,Central II,FALSE,9/19/2014,8.452963751,-13.21653242,yes
+582,c55720,9/22/2014,m,16,years,Other,58,137,no,no,yes,no,yes,36.5,30.90201929,West II,SL040207,West II,TRUE,9/25/2014,8.462876463,-13.22494794,yes
+583,a55830,10/15/2014,f,12,years,Other,54,140,yes,no,no,no,yes,38.7,27.55102041,West II,SL040207,West II,TRUE,10/16/2014,8.472580276,-13.23243098,yes
+584,e61715,9/13/2014,f,17,years,Port Hospital,53,141,yes,no,yes,no,yes,39.3,26.65861878,East II,SL040204,East II,TRUE,9/14/2014,8.482061673,-13.21933498,yes
+585,82b823,8/5/2014,m,8,years,Port Hospital,55,114,yes,no,yes,no,no,38.8,42.32071407,West II,SL040207,West II,TRUE,8/10/2014,8.461478201,-13.22348359,yes
+586,639e4b,11/2/2014,f,0,years,,13,30,yes,yes,yes,no,no,38.8,144.4444444,Mountain Rural,SL040102,Mountain Rural,FALSE,11/3/2014,8.453877024,-13.21153652,yes
+587,ecd845,8/31/2014,f,39,years,Other,70,215,yes,yes,yes,no,yes,39.6,15.14332071,West II,SL040207,West II,TRUE,9/2/2014,8.465860225,-13.2453436,yes
+588,012ea3,11/9/2014,f,34,years,St. Mark's Maternity Hospital (SMMH),81,177,yes,no,yes,no,no,38.6,25.85463947,Mountain Rural,SL040102,Mountain Rural,TRUE,11/10/2014,8.463282349,-13.21609594,yes
+589,619e1e,10/4/2014,f,7,years,Other,35,96,yes,no,yes,no,yes,39.4,37.97743056,West II,SL040207,West II,TRUE,10/11/2014,8.471122675,-13.23211447,yes
+590,bbda1c,11/13/2014,f,19,years,Other,60,117,yes,no,yes,no,yes,39.5,43.83081306,Mountain Rural,SL040102,Mountain Rural,TRUE,11/14/2014,8.467090621,-13.2116075,yes
+591,e06c58,10/19/2014,f,0,years,St. Mark's Maternity Hospital (SMMH),2,,no,no,no,no,no,37.6,,Mountain Rural,SL040102,Mountain Rural,FALSE,10/20/2014,8.460223406,-13.21121152,yes
+592,e8bcf6,8/28/2014,f,22,years,Military Hospital,63,165,yes,no,no,no,no,38.9,23.14049587,West III,SL040208,West III,TRUE,9/1/2014,8.457545476,-13.25903098,yes
+593,8e43e6,10/27/2014,f,17,years,Military Hospital,60,133,yes,yes,no,no,yes,38.5,33.91938493,Mountain Rural,SL040102,Mountain Rural,TRUE,10/30/2014,8.469985615,-13.21536,yes
+594,5b1d5e,8/6/2014,f,22,years,Central Hospital,65,151,yes,no,yes,no,yes,38.4,28.5075216,Central I,SL040201,Central I,TRUE,8/9/2014,8.479378449,-13.2279173,yes
+595,d5f3c0,8/13/2014,m,5,years,Military Hospital,50,83,no,no,yes,no,no,37.1,72.57947452,East III,SL040205,East III,TRUE,8/14/2014,8.474207868,-13.20824913,yes
+596,4651d4,10/16/2014,f,28,years,St. Mark's Maternity Hospital (SMMH),72,146,yes,no,yes,no,no,39,33.77744417,West II,SL040207,West II,FALSE,10/17/2014,8.460785492,-13.23277932,yes
+597,0f5c6e,7/30/2014,f,8,years,Port Hospital,42,106,no,no,yes,no,yes,37.1,37.37985048,West III,SL040208,West III,TRUE,8/4/2014,8.485839638,-13.25939363,yes
+598,68bd03,9/14/2014,m,29,years,,70,198,yes,no,yes,no,yes,39.7,17.85532089,East II,SL040204,East II,TRUE,9/18/2014,8.477352179,-13.21169393,yes
+599,f9e3c4,8/11/2014,f,23,years,,61,188,no,no,yes,no,no,36,17.2589407,Central I,SL040201,Central I,TRUE,8/15/2014,8.48018652,-13.22769121,yes
+600,983f4f,11/18/2014,f,10,years,,44,114,yes,no,yes,no,yes,39.9,33.85657125,East II,SL040204,East II,TRUE,11/20/2014,8.486306914,-13.22333818,yes
+601,7bc2e6,10/20/2014,f,13,years,,64,120,no,no,yes,no,yes,37.2,44.44444444,,SL040102,Central II,FALSE,10/23/2014,8.470979421,-13.21449761,no
+602,d4df19,9/6/2014,f,2,years,Port Hospital,29,48,yes,no,yes,no,yes,39.2,125.8680556,Mountain Rural,SL040102,Mountain Rural,TRUE,9/10/2014,8.449354958,-13.21593579,yes
+603,f2438e,9/20/2014,m,19,years,Military Hospital,61,153,yes,no,yes,no,no,38.9,26.05835362,West II,SL040207,West II,TRUE,9/23/2014,8.463861524,-13.22399718,yes
+604,8728f5,,m,43,years,Other,79,177,yes,no,yes,no,yes,38.8,25.21625331,West II,SL040207,West II,TRUE,11/13/2014,8.469155711,-13.24574117,yes
+605,597f17,10/6/2014,f,1,years,,14,51,yes,no,yes,no,no,38.7,53.82545175,West III,SL040208,West III,TRUE,10/6/2014,8.465316251,-13.26327442,yes
+606,2746fe,8/17/2014,m,18,years,Other,59,164,yes,no,yes,no,no,39.5,21.93634741,Mountain Rural,SL040102,Mountain Rural,FALSE,8/20/2014,8.476526411,-13.21721432,yes
+607,42022a,,m,25,years,Other,72,201,no,no,yes,no,no,36.4,17.82134106,West II,SL040207,West II,TRUE,8/8/2014,8.47670919,-13.23943777,yes
+608,3668fc,11/10/2014,f,4,years,Port Hospital,45,61,no,no,yes,no,yes,37.2,120.9352325,East II,SL040204,East II,TRUE,11/11/2014,8.486877073,-13.22510268,yes
+609,74bea1,9/3/2014,m,7,years,Other,43,116,yes,no,yes,no,no,39.2,31.95600476,West III,SL040208,West III,TRUE,9/4/2014,8.459520259,-13.26850162,yes
+610,c8ee00,11/13/2014,m,3,months,Other,70,179,yes,no,yes,no,yes,38.2,21.84700852,Mountain Rural,SL040102,Mountain Rural,TRUE,11/13/2014,8.462756616,-13.2132681,yes
+611,217b74,10/1/2014,m,13,years,Port Hospital,64,163,no,yes,yes,no,no,37.1,24.08822312,Mountain Rural,SL040102,Mountain Rural,FALSE,10/3/2014,8.470802503,-13.21908829,yes
+612,266760,11/8/2014,m,19,years,Port Hospital,63,127,yes,no,yes,no,yes,39,39.06007812,East II,SL040204,East II,TRUE,11/8/2014,8.485086085,-13.22613856,yes
+613,2e3254,9/20/2014,f,18,years,,46,147,no,no,yes,no,yes,37.1,21.28742654,Mountain Rural,SL040102,Mountain Rural,TRUE,9/24/2014,8.461843607,-13.21513247,yes
+614,aae55a,9/28/2014,m,36,years,Central Hospital,81,189,yes,no,no,no,no,39.6,22.67573696,Central I,SL040201,Central I,TRUE,9/29/2014,8.477175392,-13.22771941,yes
+615,ef1f68,8/15/2014,m,21,years,Port Hospital,66,165,yes,yes,yes,no,yes,39.4,24.24242424,West I,SL040206,West I,TRUE,8/18/2014,8.481847589,-13.24911082,yes
+616,853362,11/20/2014,f,0,years,Military Hospital,1,19,no,no,yes,no,yes,37,27.70083102,Mountain Rural,SL040102,Mountain Rural,FALSE,11/21/2014,8.475810509,-13.21983016,yes
+617,0d8a0a,11/24/2014,m,27,years,Central Hospital,60,152,yes,no,no,no,yes,40,25.96952909,West II,SL040207,West II,TRUE,11/30/2014,8.468372942,-13.23378628,yes
+617,0d8a0a,,m,27,years,Central Hospital,60,152,yes,no,no,no,yes,40,25.96952909,West II,SL040207,West II,TRUE,11/30/2014,8.468372942,-13.23378628,yes
+618,818a12,8/13/2014,m,37,years,Military Hospital,67,198,yes,no,yes,no,yes,39,17.09009285,West III,SL040208,West III,TRUE,8/22/2014,8.473614401,-13.26486302,yes
+618,818a12,8/13/2014,m,37,years,Military Hospital,67,198,yes,no,yes,no,yes,39,17.09009285,West III,SL040208,West III,TRUE,8/22/2014,8.473614401,-13.26486302,yes
+619,944fd9,8/22/2014,f,8,years,Port Hospital,33,110,yes,no,yes,yes,no,39.2,27.27272727,Mountain Rural,SL040102,Mountain Rural,FALSE,,8.467142848,-13.21470376,yes
+619,944fd9,8/22/2014,f,8,years,Port Hospital,33,110,yes,no,yes,yes,no,39.2,27.27272727,Mountain Rural,SL040102,Mountain Rural,TRUE,,8.467142848,-13.21470376,yes
+620,19703e,11/13/2014,f,15,years,,48,130,yes,no,yes,yes,yes,38.7,28.40236686,West III,SL040208,West III,TRUE,12/8/2014,8.48541906,-13.2619778,yes
+620,19703e,11/13/2014,f,15,years,,48,130,yes,no,yes,yes,yes,38.7,28.40236686,West III,SL040208,West III,TRUE,12/8/2014,8.48541906,-13.2619778,yes
+621,7a17c7,7/18/2014,f,12,years,Port Hospital,46,137,yes,no,yes,yes,yes,39,24.50849806,Central I,SL040201,Central II,TRUE,,8.47669837,-13.23573472,yes
+621,7a17c7,7/18/2014,f,12,years,Port Hospital,46,137,yes,no,yes,yes,yes,39,24.50849806,Central I,SL040201,Central II,FALSE,,8.47669837,-13.23573472,yes
+622,9d77bf,11/28/2014,m,48,years,Port Hospital,85,225,yes,no,yes,no,no,39.2,16.79012346,Mountain Rural,SL040102,Mountain Rural,TRUE,12/4/2014,8.454744434,-13.20920989,yes
+622,9d77bf,11/28/2014,m,48,years,Port Hospital,85,225,yes,no,yes,no,no,39.2,16.79012346,Mountain Rural,SL040102,Mountain Rural,TRUE,12/4/2014,8.454744434,-13.20920989,yes
+623,b8812a,5/18/2014,f,18,years,Port Hospital,41,135,no,no,no,no,no,36.8,22.49657064,West II,SL040207,West II,TRUE,,8.475476161,-13.23637112,yes
+623,b8812a,5/18/2014,f,18,years,Port Hospital,41,135,no,no,no,no,no,36.8,22.49657064,West II,SL040207,West II,TRUE,,8.475476161,-13.23637112,yes
+624,2f862f,8/26/2014,m,39,,,80,212,yes,no,yes,no,no,39.3,17.7999288,Mountain Rural,SL040102,Mountain Rural,FALSE,9/12/2014,8.465084362,-13.21248274,yes
+624,2f862f,8/26/2014,m,39,years,,80,212,yes,no,yes,no,no,39.3,17.7999288,Mountain Rural,SL040102,Mountain Rural,TRUE,9/12/2014,8.465084362,-13.21248274,yes
+625,376051,9/20/2014,m,16,years,Port Hospital,57,192,yes,no,no,no,yes,38.2,15.46223958,West III,SL040208,West III,TRUE,10/5/2014,8.458579816,-13.26931131,yes
+625,376051,9/20/2014,m,16,years,Port Hospital,57,192,yes,no,no,no,yes,38.2,15.46223958,West III,SL040208,West III,TRUE,10/5/2014,8.458579816,-13.26931131,yes
+626,f55792,10/16/2014,m,37,years,Other,77,205,yes,no,yes,no,yes,38.8,18.32242713,Mountain Rural,SL040102,Mountain Rural,TRUE,10/23/2014,8.46400367,-13.21500888,yes
+626,f55792,10/16/2014,m,37,years,Other,77,205,yes,no,yes,no,yes,38.8,18.32242713,Mountain Rural,SL040102,Mountain Rural,FALSE,10/23/2014,8.46400367,-13.21500888,yes
+627,e6590f,9/8/2014,f,15,years,,51,101,yes,no,yes,no,yes,39,49.99509852,Mountain Rural,SL040102,Mountain Rural,TRUE,9/15/2014,8.461557147,-13.2169281,yes
+627,e6590f,9/8/2014,f,15,years,,51,101,yes,no,yes,no,yes,39,49.99509852,Mountain Rural,SL040102,Mountain Rural,TRUE,9/15/2014,8.461557147,-13.2169281,yes
+628,b6a6c7,7/29/2014,Unknown,,years,Port Hospital,47,70,yes,no,yes,no,yes,39.3,95.91836735,West III,SL040208,West III,TRUE,8/7/2014,8.47485111,-13.26390642,yes
+628,b6a6c7,7/29/2014,Unknown,,years,Port Hospital,47,70,yes,no,yes,no,yes,39.3,95.91836735,West III,SL040208,West III,TRUE,8/7/2014,8.47485111,-13.26390642,yes
+629,f15ceb,9/10/2014,m,16,years,Mitilary Hospital,50,139,yes,no,yes,no,no,38.5,25.87857771,East II,SL040204,East II,FALSE,9/15/2014,8.483557401,-13.22724567,yes
+629,f15ceb,9/10/2014,m,16,years,Military Hospital,50,139,yes,no,yes,no,no,38.5,25.87857771,East II,SL040204,East II,TRUE,9/15/2014,8.483557401,-13.22724567,yes
+630,a190d3,9/2/2014,f,30,years,,55,165,no,no,yes,no,yes,36.7,20.2020202,Central I,SL040201,Central I,TRUE,10/1/2014,8.478319114,-13.2286138,yes
+630,a190d3,9/2/2014,f,30,years,,55,165,no,no,yes,no,yes,36.7,20.2020202,Central I,SL040201,Central I,TRUE,10/1/2014,8.478319114,-13.2286138,yes
+631,b56849,8/3/2014,m,8,years,Port Hospital,48,102,yes,yes,yes,no,no,39.8,46.1361015,East II,SL040204,East II,TRUE,,8.48227373,-13.22202549,yes
+631,b56849,8/3/2014,m,8,years,Port Hospital,48,102,yes,yes,yes,no,no,39.8,46.1361015,East II,SL040204,East II,FALSE,,8.48227373,-13.22202549,yes
+632,93bb41,,f,8,years,St. Mark's Maternity Hospital (SMMH),33,75,no,yes,yes,no,yes,36.5,58.66666667,West III,SL040208,West III,TRUE,9/20/2014,8.484906583,-13.26203691,yes
+632,93bb41,9/7/2014,f,8,years,St. Mark's Maternity Hospital (SMMH),33,75,no,yes,yes,no,yes,36.5,58.66666667,West III,SL040208,West III,TRUE,9/20/2014,8.484906583,-13.26203691,yes
+633,ab8deb,9/10/2014,m,12,years,Central Hospital,62,118,yes,no,yes,yes,no,38.6,44.52743465,Mountain Rural,SL040102,Mountain Rural,TRUE,9/16/2014,8.452209688,-13.21580499,yes
+633,ab8deb,9/10/2014,m,12,years,Central Hospital,62,118,yes,no,yes,yes,no,38.6,44.52743465,Mountain Rural,SL040102,Mountain Rural,TRUE,9/16/2014,8.452209688,-13.21580499,yes
+634,0d14a0,9/11/2014,m,18,years,Port Hospital,71,158,yes,no,no,no,yes,39.8,28.44095498,Mountain Rural,SL040102,Mountain Rural,FALSE,9/19/2014,8.466908475,-13.21172561,yes
+634,0d14a0,9/11/2014,m,18,years,Port,71,158,yes,no,no,no,yes,39.8,28.44095498,Mountain Rural,SL040102,Mountain Rural,TRUE,9/19/2014,8.466908475,-13.21172561,yes
+635,26d162,9/29/2014,m,31,years,Port Hospital,67,176,yes,yes,yes,no,yes,40.2,21.62964876,Central I,SL040201,Central I,TRUE,10/1/2014,8.476461961,-13.23310214,yes
+635,26d162,9/29/2014,m,31,years,Port,67,176,yes,yes,yes,no,yes,40.2,21.62964876,Central I,SL040201,Central I,TRUE,10/1/2014,8.476461961,-13.23310214,yes
+636,06fd73,7/8/2014,m,35,years,Military Hospital,77,166,yes,no,yes,no,no,38.7,27.94309769,West III,SL040208,West III,TRUE,,8.463263465,-13.26379997,yes
+636,06fd73,7/8/2014,m,35,years,Military Hospital,77,166,yes,no,yes,no,no,38.7,27.94309769,West III,SL040208,West III,FALSE,,8.463263465,-13.26379997,yes
+637,18ae3d,9/6/2014,f,14,years,Port,60,145,yes,no,yes,no,yes,38.9,28.53745541,West II,SL040207,West II,TRUE,9/14/2014,8.471267031,-13.23498547,yes
+638,ba4cfc,10/6/2014,f,16,years,,51,128,yes,no,yes,no,yes,38.7,31.12792969,Mountain Rural,SL040102,Mountain Rural,TRUE,10/26/2014,8.464733526,-13.21509678,yes
+639,4e7be4,10/13/2014,f,40,years,,88,195,yes,yes,yes,no,yes,38.2,23.1426693,Mountain Rural,SL040102,Mountain Rural,TRUE,11/3/2014,8.464727363,-13.21516493,yes
+640,1cab44,10/17/2014,m,1,years,Central Hospital,19,38,yes,no,yes,no,yes,38.5,131.5789474,East II,SL040204,East II,TRUE,10/26/2014,8.483327135,-13.2182513,yes
+641,2ebf95,6/19/2014,m,36,years,Port,78,217,yes,no,no,no,no,38.4,16.56437809,East II,SL040204,Central II,FALSE,6/23/2014,8.486766806,-13.226578,no
+642,fe2e5a,10/3/2014,f,16,years,,54,141,yes,no,yes,no,no,39.1,27.16161159,West II,SL040207,West II,TRUE,10/16/2014,8.469134282,-13.24691945,yes
+643,8dcafb,11/25/2014,m,4,years,Port,31,100,,,,,,36.4,31,East II,SL040204,East II,TRUE,12/3/2014,8.480243204,-13.21143713,yes
+644,059b73,11/21/2014,f,11,months,Port,55,129,yes,no,yes,no,no,39.4,33.05089838,East II,SL040204,East II,TRUE,11/28/2014,8.483603406,-13.21945446,yes
+645,742243,10/1/2014,m,35,years,,66,192,yes,yes,yes,no,yes,38.4,17.90364583,West III,SL040208,West III,TRUE,11/1/2014,8.458561429,-13.2524071,yes
+646,b6aa9a,11/24/2014,m,19,years,Port,67,135,yes,no,yes,no,no,38.7,36.76268861,West III,SL040208,West III,FALSE,,8.45476717,-13.26610357,yes
+647,655168,10/23/2014,m,22,years,Port,57,158,yes,no,yes,no,yes,39.5,22.83287935,East II,SL040204,East II,TRUE,11/22/2014,8.484044682,-13.22165175,yes
+648,f63811,11/11/2014,f,6,years,Port,30,81,no,no,yes,no,no,37.2,45.72473708,East II,SL040204,East II,TRUE,11/16/2014,8.483129523,-13.21576473,yes
+649,4d9fa7,7/30/2014,f,4,years,Port,49,60,yes,yes,yes,no,no,39.6,136.1111111,Mountain Rural,SL040102,Mountain Rural,TRUE,8/2/2014,8.463124343,-13.21516197,yes
+650,017b46,9/20/2014,m,22,years,,61,164,yes,no,yes,no,no,38.7,22.67995241,Mountain Rural,SL040102,Mountain Rural,TRUE,10/16/2014,8.467806021,-13.21461315,yes
+651,db38e1,,f,33,years,Port,71,196,yes,no,yes,no,yes,39.5,18.48188255,East II,SL040204,East II,FALSE,9/11/2014,8.476096887,-13.20975558,yes
+652,47dfcd,10/1/2014,f,1,years,Port,23,34,,,,,,36.9,198.9619377,West II,SL040207,West II,TRUE,10/12/2014,8.471507212,-13.24649682,yes
+653,cf7729,10/31/2014,f,14,years,Port,54,142,yes,no,yes,no,no,38.6,26.78040071,Mountain Rural,SL040102,Mountain Rural,TRUE,11/9/2014,8.450779087,-13.22102666,yes
+654,bd7b50,9/1/2014,f,5,years,Port,47,68,yes,no,yes,no,yes,38.5,101.6435986,Mountain Rural,SL040102,Mountain Rural,TRUE,9/10/2014,8.454824663,-13.24231353,yes
+655,767320,9/24/2014,f,10,years,Port Hospital,59,114,yes,no,yes,no,no,39.5,45.39858418,Central II,SL040202,Central II,TRUE,10/16/2014,8.479865182,-13.23620685,yes
+656,b7641e,7/27/2014,f,7,years,Other,32,103,yes,yes,yes,no,yes,38.4,30.16306909,West II,SL040207,West II,FALSE,8/5/2014,8.465181053,-13.23508037,yes
+657,aac49d,10/26/2014,m,1,years,Other,16,50,no,no,yes,no,yes,36.9,64,West III,SL040208,West III,TRUE,11/18/2014,8.48114874,-13.26374485,yes
+658,ece4f9,10/16/2014,f,30,years,,71,168,yes,no,yes,no,no,39.3,25.15589569,Mountain Rural,SL040102,Mountain Rural,TRUE,10/20/2014,8.475308207,-13.21901604,yes
+659,10dd7d,10/11/2014,m,11,years,,62,121,yes,no,yes,no,no,39.6,42.34683423,West III,SL040208,West III,TRUE,,8.475905886,-13.2650928,yes
+660,0e6823,9/24/2014,m,25,years,,63,142,yes,no,yes,no,yes,39.1,31.24380083,Central II,SL040202,Central II,TRUE,10/4/2014,8.488148343,-13.23694941,yes
+661,7aee5b,10/26/2014,m,18,years,Port Hopital,66,149,no,no,yes,no,yes,37,29.72839061,,SL040102,Central II,FALSE,11/7/2014,8.453045584,-13.24199934,yes
+662,9d46f7,11/8/2014,m,25,years,Port Hopital,69,159,yes,no,yes,no,no,38.7,27.29322416,East I,SL040203,East I,TRUE,11/19/2014,8.48592857,-13.21430805,yes
+663,5387a2,5/31/2014,m,23,years,Port Hopital,66,148,yes,no,yes,no,yes,39.3,30.13148283,West III,SL040208,West III,TRUE,6/17/2014,8.45524161,-13.26284351,yes
+664,bc475c,11/8/2014,f,4,years,Central Hospital,35,63,yes,no,yes,no,yes,39.4,88.18342152,West II,SL040207,West II,TRUE,11/1/2014,8.469632033,-13.23576306,yes
+665,84dcda,11/24/2014,m,10,years,,54,141,yes,no,yes,no,yes,40.1,27.16161159,Mountain Rural,SL040102,Mountain Rural,TRUE,12/21/2014,8.45121564,-13.21107725,yes
