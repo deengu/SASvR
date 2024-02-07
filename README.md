@@ -5,7 +5,7 @@ knitr::opts_chunk$set(eval = FALSE, message = FALSE, warning = FALSE)
 ```
 
 
-Moving from a SAS environment to the R programming language requires a paradigm change in thinking. I hope that this documents helps you in deciding whether to stay with SAS or move to R. This document is written for the intermediate SAS epidemiologist who is exploring the use of R. Some general programming concepts like looping and experience with vectors and lists are are helpful to understand some of the code below. 
+Moving from a SAS environment to the R programming language requires a paradigm change in thinking. I hope that this documents helps you in deciding whether to stay with SAS or move to R. This document is written for the intermediate SAS epidemiologist who is exploring the use of R. This guide is not intended to teach you R from scratch. Rather I see two main purposes: 1) having someone more knowledgeable in R walk you through the differences between SAS and R using this document. This way you can see if R is something you would like to learn. And 2) reviewing concepts you have already learned in a basic intro course to R. 
 
 ### Difference in approach
 
@@ -159,7 +159,7 @@ First we manipulate the line listing using commonly used SAS functions.
 /*Rename variables. This is separate datastep because of how SAS initializes variables*/
 data df2;
 	set df;
-	/* Rename variables */
+	/* Rename variables. Syntax is old_name = new_name */
     rename onset_date = date_onset
            date_of_report = date_report
            adm3_name_res = district_res
@@ -225,7 +225,7 @@ df3 <- df %>%
   # clean names - SAS does this automatically
   clean_names() %>% 
 
-  # rename variables 
+  # rename variables; syntax is new_name = old_name
   rename(
     date_onset = onset_date,
     date_report = date_of_report,
@@ -356,7 +356,22 @@ df3 %>% tabyl(fever, chills, cough) %>%
   adorn_pct_formatting(digits=2) %>% 
   adorn_ns()
 ```
+Another powerful use for Proc Freq is creating multiple tables all at once. This is helpful if you have many variables you want to check at the same time.
 
+SAS:
+
+```SAS
+proc freq data=df3;
+	tables gender hospital fever--vomit district_res lab_confirmed case_def age_group;
+run;
+```
+In R, there is no existing report that can easily generate separate tables for each column. Instead, you need some base R knowledge of the apply functions. The apply function runs a customized function on each list (in this scenario each list is a column of data). 
+
+R:
+
+```r
+lapply(df3[,c(6, 9:13, 16, 19, 25, 27)], function(x) tabyl(x))
+```
 
 ### PROC Sql
 
@@ -381,6 +396,70 @@ df3 %>%
     average_weight = mean(wt_kg, na.rm=T),
     max_weight = max(wt_kg, na.rm=T)
   )
+```
+
+Another powerful use of Proc SQL is de-duplicating multiple rows into one. There are many ways to approach this problem. Here is just one suggested solution. The first things to do would be to examine how many duplicates we have based on the columns we choose. The code below creates a table of the number of duplicates by `case_id`. 
+
+SAS:
+```SAS
+proc sql;
+create table dup as
+select distinct case_id, date_onset, count(*) as unique_count
+from df3
+group by case_id, date_onset
+order by unique_count desc;
+quit;
+```
+
+Here is the same code in R:
+```r
+dup <- df3 %>% 
+  group_by(case_id, date_onset) %>% 
+  summarize(count = n()) %>% 
+  arrange(-count)
+```
+
+Given this information, next we would like to view all the duplicates together. This will allow us to examine each duplicate in detail. In SAS we would filter the list to only those with `unique_count = 2`. Then inner join with the main dataset to include only the duplicates.
+
+SAS:
+```SAS
+data dup_list;
+	set dup;
+	where unique_count = 2;
+run;
+
+proc sql;
+create table dup2 as
+select * from df3
+join dup_list on df3.case_id = dup_list.case_id;
+quit;
+```
+
+In R, we may take a slightly different approach. We would create a list of values from `case_id` where `unique_count = 2`. We would then filter the main table based off this list of `case_id`. 
+
+R:
+```r
+dup_list <- dup %>% 
+  filter(count == 2) %>% 
+  pull(case_id)
+
+dup2 <- df3 %>% 
+  filter(case_id %in% dup_list2)
+```
+
+After examining the duplicates side-by-side, and if everything looks correct, we would then go ahead and remove the duplicates. 
+
+SAS:
+```SAS
+proc sort data=df3 nodupkey dupout=dupout out=df3_distinct;
+	by case_id date_onset;
+run;
+```
+
+R:
+```r
+df3_distinct <- df3 %>% 
+  distinct(case_id, date_onset)
 ```
 
 ## Macro functions
@@ -439,18 +518,7 @@ quit;
 ```
 The name of these macro variables are `&district_res1`, `&district_res2`,... all the way to that last unique value, which in this case is `&district_res9`. 
 
-Then we use another PROC Sql to get the number of unique districts into a variable named `district_count`. 
-
-```SAS
-proc sql noprint;
-select count(distinct district_res)
-	into :district_count
-	from df3
-	where district_res ne '';
-quit;
-```
-
-Finally we can use a macro code to run a PROC Print for each unique value of `district_res`. 
+Finally we can use a macro code to run a PROC Print for each unique value of `district_res`. Note that creating macro variables using Proc SQL automatically created a macro variable named `&sqlobs` that counts how many macro variables were created. 
 
 ```SAS
 %macro print_bydistrict (start, stop, hospital_want='Port Hospital');
@@ -464,7 +532,7 @@ Finally we can use a macro code to run a PROC Print for each unique value of `di
 	%end;
 %mend;
 
-%print_bydistrict(1,&district_count)
+%print_bydistrict(1,&sqlobs)
 ```
 
 This program is difficult to read and understand visually. It runs a do loop from a numeric parameter: `start` to another numeric parameter `stop`. In this case, when we call this macro, we are running from the values `1` to `&district_count`, which is 9. 
