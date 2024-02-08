@@ -68,7 +68,7 @@ options nofmterr;
 %let folder= %sysfunc(tranwrd(&a,&b,));
 
 /* import data file */
-proc import datafile = "&folder\surveillance_linelist_20141201.csv" dbms=csv out=df replace; 
+proc import datafile = "&folder.surveillance_linelist_20141201.csv" dbms=csv out=df replace; 
 run;
 
 /* sort on onset date and gender */
