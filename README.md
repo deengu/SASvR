@@ -459,7 +459,8 @@ run;
 R:
 ```r
 df3_distinct <- df3 %>% 
-  distinct(case_id, date_onset)
+  distinct(case_id, date_onset, .keep_all = TRUE)
+  
 ```
 
 ## Macro functions
@@ -606,7 +607,43 @@ ggplot(mapping = aes(
   facet_wrap(~district)
 ```
 
-## Simple Statistics
+## Basic Epidemiology
+
+A line listing may be used to calculate measures of association. Measures such as risk ratio and odds ratios are now commonly calculated through regression, but creating a 2x2 table is still the foundational method most epis learn. These ratios are most easily calculated in Excel. You would use a pivot table and put the outcome in the columns field, and the exposure in the row field. Make sure that the positive exposure and outcome are ordered as the first row and first column in the 2x2 data. 
+
+For example, you can put death/recovered in the outcomes field, and vomiting in the exposure (though technically not an exposure). Our `df3` dataset was filtered to `epilink == yes`, so add that to your pivot table filter. We can now calculate our odds ratio: `(a*d)/(b*c) = (125*113)/(112*103) = 1.22`.
+
+In SAS, we have already done most of the work because all we need is customize Proc Freq by adding an option to display the odds ratio. We just have to format the variables so that the positive exposure and outcome are ordered first in the column and row.
+
+```SAS
+proc format;
+	value $yesno
+	'yes' = '1-yes'
+	'no' = '2-no'
+	'Death' = '1-Death'
+	'Recover' = '2-Recover';
+run;
+
+proc freq data=df3 order=formatted;
+	tables (fever chills cough aches vomit)*outcome / nocol norow nopercent;
+	format fever chills cough aches vomit outcome $yesno.;
+	exact or;
+run;
+```
+
+In R, there are multiple ways and packages that can help with an odds ratio. For now, we will use the Fisher exact test built into the base R stats package. We would also need a method to order the variables, so that the odds ratio can be calculated the correctly using exposed/unexposed. 
+```r
+df3$outcome <- factor(df3$outcome, levels = c("Death", "Recover"))
+df3$vomit <- factor(df3$vomit, levels = c("yes", "no"))
+
+table_2x2 <- df3 %>% 
+  filter(outcome != "", vomit != "") %>% 
+  tabyl(vomit, outcome)
+
+fisher.test(table_2x2)
+```
+
+## Regression
 
 
 ## Conclusions
